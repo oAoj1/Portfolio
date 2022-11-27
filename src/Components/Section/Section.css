@@ -14,7 +14,7 @@
 }
 
 .joaoContent{
-    margin: 1em 0;
+    margin: 3em 1em;
 }
 
 .joaoContent h1{
@@ -86,7 +86,7 @@
 }
 
 .techContent ul li:nth-child(2):hover{
-    color: #6495ed;
+    color: #4578d8;
 }
 
 .techContent ul li:nth-child(3):hover{
@@ -102,5 +102,65 @@
 }
 
 .techContent ul li:nth-child(6):hover{
-    color:blue ;
+    color:#0000ff ;
+}
+
+.techContent ul li:nth-child(7):hover{
+    color: #0b40a1;
+}
+
+.techContent ul li:nth-child(1),
+.techContent ul li:nth-child(2),
+.techContent ul li:nth-child(3){
+    border-bottom: 5px solid #008000;
+}
+
+.techContent ul li:nth-child(4){
+    border-bottom: 5px solid #d8d803;
+}
+
+.techContent ul li:nth-child(5),
+.techContent ul li:nth-child(6),
+.techContent ul li:nth-child(7){
+    border-bottom: 5px solid #dc143c;
+}
+
+.skillContent span{
+    font-weight: bold;
+}
+
+.skillContent .verde,
+.levelContent .verde{
+    color: #008000;
+}
+
+.skillContent .amarelo,
+.levelContent .amarelo{
+    color: #d8d803;
+}
+
+.skillContent .vermelho,
+.levelContent .vermelho{
+    color: #dc143c;
+}
+
+.levelContent{
+    width: 100%;
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.levelContent h4{
+    margin-bottom: 0.5em;
+    font-size: 1.7em;
+}
+
+.levelContent ul{
+    list-style: none;
+}
+
+.levelContent ul li{
+    font-size: 1.2em;
+    margin: 0.3em 0;
 }

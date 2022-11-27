@@ -5,6 +5,7 @@ import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { IoLogoNodejs } from 'react-icons/io'
 import { FaPython } from 'react-icons/fa'
+import { SiTypescript } from 'react-icons/si'
 
 export default function Section(){
 
@@ -20,12 +21,12 @@ export default function Section(){
                 <h3>Bem vindo ao meu portifólio</h3>
                 <div className="joaoContent">
                     <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
-                    <p>Tenho <strong>{idade} anos</strong> sou estudante de <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior (ou estagiário)</p>
+                    <p>Tenho <strong>{idade} anos</strong> sou estudante de <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior ou estagiário</p>
                 </div>
 
                 <div className="skillContent">
                     <h2>Habilidades</h2>
-                    <p>Veja algumas das tecnologias em que possuo um breve conhecimentoe e outras que estou aprendendo</p>
+                    <p>Veja tecnologias em que possuo um <span className='verde'>breve conhecimento</span>, outras que <span className='amarelo'>estou estudando</span> e algumas que também já tive contato <span className='vermelho'>poucas vezes</span> </p>
                     <div className="techContent">
                         <ul>
                             <li><AiFillHtml5/></li>
@@ -34,6 +35,15 @@ export default function Section(){
                             <li><FaReact/></li>
                             <li><IoLogoNodejs/></li>
                             <li><FaPython/></li>
+                            <li><SiTypescript/></li>
+                        </ul>
+                    </div>
+                    <div className="levelContent">
+                        <h4>Sublinhados de: </h4>
+                        <ul>
+                            <li> <span className='verde'>Verde:</span> Possuo um breve conhecimento da tecnologia</li>
+                            <li> <span className='amarelo'>Amarelo:</span> Estou estudando a tecnologia no momento</li>
+                            <li> <span className='vermelho'>Vermelho:</span>  Já tive um contato com a tecnologia</li>
                         </ul>
                     </div>
                 </div>
