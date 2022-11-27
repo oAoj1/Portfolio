@@ -1,0 +1,16 @@
+.infoContent{
+    background: linear-gradient(45deg,#000,#052c2c);
+}
+
+.infoContent h1{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.infoContent h2{
+    color: #fff;
+}
+
+.infoContent h2 span{
+    color: #00ffff;
+}
