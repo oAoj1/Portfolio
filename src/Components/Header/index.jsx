@@ -42,13 +42,6 @@ export default function Header(){
                             <AiFillLinkedin/>
                         </a>
                     </li>
-                    <li>
-                        <a 
-                            target="_blank" 
-                            href="https://wa.me/5511970727051">
-                            <RiWhatsappFill/>
-                        </a>
-                    </li>
                 </ul>
             </span> 
             
