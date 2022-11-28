@@ -1,4 +1,7 @@
 import './Section.css'
+
+import { motion } from 'framer-motion'
+
 import { FaReact } from 'react-icons/fa'
 import { DiJavascript1 } from 'react-icons/di'
 import { AiFillHtml5 } from 'react-icons/ai'
@@ -6,11 +9,13 @@ import { DiCss3 } from 'react-icons/di'
 import { IoLogoNodejs } from 'react-icons/io'
 import { FaPython } from 'react-icons/fa'
 import { SiTypescript } from 'react-icons/si'
+
 import { GiBrain } from 'react-icons/gi'
 import { BiHappyBeaming } from 'react-icons/bi'
 import { AiFillHeart } from 'react-icons/ai'
 import { FaHandRock } from 'react-icons/fa'
 import { GiThink } from 'react-icons/gi'
+
 
 export default function Section(){
 
