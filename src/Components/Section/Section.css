@@ -6,7 +6,7 @@
 
 .infoContent{
     width: 100%;
-    padding: 5em 4em;
+    padding: 3em 4em 10em 4em;
     background: linear-gradient(45deg,#000,#052c2c);
 }
 
@@ -224,4 +224,35 @@
 
 .softSkillsContent ul li:nth-child(5):hover{
     color: #038181;
+}
+
+.projectsContent{
+    width: 100%;
+}
+
+.myProjectsContent{
+    background:linear-gradient(-60deg,#ffffff,#00ffff);
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    margin:-6em auto;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.myProjectsContent h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.myProjectsContent p{
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    width: 80%;
+    margin: auto;
 }

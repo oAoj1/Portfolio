@@ -72,6 +72,13 @@ export default function Section(){
                 </div>
 
             </div>
+
+            <div className="projectsContent">
+                <div className="myProjectsContent">
+                    <h2>Meus projetos</h2>
+                    <p>Enquanto estudava as tecnologias fui colocando meu aprendizado em prática e criando projetos, confira alguns:</p>
+                </div>
+            </div>
             
         </section>
     )
