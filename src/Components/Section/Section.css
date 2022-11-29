@@ -306,8 +306,29 @@
 }
 
 .contentOne,
-.contentTwo{
+.contentTwo,
+.contentThree,
+.contentFour{
     display: flex;
+}
+
+.contentThree svg,
+.contentFour svg{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.jsLogo{
+    color: #d8d803;
+}
+
+.schoolLogo{
+    color: #7c061d;
+}
+
+.clockLogo{
+    color: #052c2c;
 }
 
 @media screen and (max-width:1000px){
@@ -368,7 +389,9 @@
     }
 
     .contentOne,
-    .contentTwo{
+    .contentTwo,
+    .contentThree,
+    .contentFour{
         flex-wrap: wrap;
     }
 }

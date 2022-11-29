@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 
 import { FaReact } from 'react-icons/fa'
 import { DiJavascript1 } from 'react-icons/di'
+import { SiJavascript } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { IoLogoNodejs } from 'react-icons/io'
@@ -15,6 +16,8 @@ import { BiHappyBeaming } from 'react-icons/bi'
 import { AiFillHeart } from 'react-icons/ai'
 import { FaHandRock } from 'react-icons/fa'
 import { GiThink } from 'react-icons/gi'
+import { MdSchool } from 'react-icons/md'
+import { BsClockFill, BsFillClockFill } from 'react-icons/bs'
 
 
 export default function Section(){
@@ -80,6 +83,10 @@ export default function Section(){
 
                     <div className="subContentProjects">
 
+                        <hr className='linha'/>
+
+                        <h2>React</h2>
+
                         <div className="contentOne">
                             <div className="innerProjectsContent">
                                 <img src="/imagens/esgotos.png" alt="esgotos" />
@@ -125,7 +132,50 @@ export default function Section(){
                                 <a target="_blank" href="https://indice-massa-corporal.vercel.app">Clique aqui</a>
                             </div> 
                         </div>
+
+                        <hr className='linha'/>
                                     
+                        <h2>Outros repositórios</h2>
+
+                        <div className="contentThree">
+
+                            <div className="innerProjectsContent">
+                                <SiJavascript className='jsLogo'/>
+                                <h3>Projetos JavaScript</h3>
+                                <span>Projetos simples feitos com Java Script</span>
+                                <a target="_blank" href="https://github.com/oAoj1/Projetos-JavaScript">Clique aqui</a>
+                            </div>
+
+                            <div className="innerProjectsContent">
+                                <MdSchool className='schoolLogo'/>
+                                <h3>Trabalhos de escola</h3>
+                                <span>Trabalhos apresentados na escola feitos em site</span>
+                                <a target="_blank" href="https://github.com/oAoj1/Trabalhos-de-escola">Clique aqui</a>
+                            </div>
+
+                        </div>
+
+                        <hr className='linha'/>
+
+                        <h2>Cursos</h2>
+
+                        <div className="contentFour">
+                            <div className="innerProjectsContent">
+                                <img src="/imagens/organo.png" alt="organo" />
+                                <h3>Organograma</h3>
+                                <span>Organize seu equipe com o organograma</span>
+                                <a target="_blank" href="https://organograma-oaoj1.vercel.app">Clique aqui</a>
+                            </div>
+
+                            <div className="innerProjectsContent">
+                                <BsClockFill className='clockLogo'/>
+                                <h3>Estudos</h3>
+                                <span>Cronometre seu tempo de estudo</span>
+                                <a target="_blank" href="https://alura-studies-oaoj1.vercel.app">Clique aqui</a>
+                            </div>
+                        </div>
+
+                        
 
                     </div>
 
