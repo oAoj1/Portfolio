@@ -68,3 +68,36 @@ header{
     align-items: center;
     justify-content: flex-end;
 }
+
+@media screen and (max-width:900px){
+    header{
+        display: block;
+    }
+
+    .logoContent{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoContent img{
+        max-width: 150px;
+    }
+
+    .spanContent{
+        flex-direction: column;
+    }
+
+    .menuContent{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menuContent li{
+        margin: 0.2em 0;
+    }
+
+    .mediasContent{
+        margin: 2em 0 1em 0;
+    }
+
+}

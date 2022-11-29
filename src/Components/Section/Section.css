@@ -305,3 +305,38 @@
 .contentTwo{
     display: flex;
 }
+
+@media screen and (max-width:1000px){
+    .infoContent{
+        padding: 1em;
+    }
+
+    .infoContent h3{
+        margin: auto;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .joaoContent{
+        text-align: center;
+    }
+
+    .joaoContent p{
+        font-size: 2em;
+        margin:1em auto 0 auto;
+    }
+
+    .levelContent ul{
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .softSkillsContent ul li{
+        margin: 1em 0;
+    }
+
+    .contentOne,
+    .contentTwo{
+        flex-wrap: wrap;
+    }
+}
