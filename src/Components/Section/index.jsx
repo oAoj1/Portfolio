@@ -18,12 +18,6 @@ import { GiThink } from 'react-icons/gi'
 
 
 export default function Section(){
-
-    const data = new Date()
-    const anoAtual = data.getFullYear()
-    const anoJoao = 2004
-    const idade = anoAtual - anoJoao
-
     return(
         <section>
             <div className="infoContent">
@@ -31,7 +25,7 @@ export default function Section(){
                 <h3>Bem vindo ao meu portifólio</h3>
                 <div className="joaoContent">
                     <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
-                    <p>Tenho <strong>{idade} anos</strong> sou estudante de <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior ou estagiário</p>
+                    <p>Estou estudando <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior ou estagiário</p>
                 </div>
 
                 <div className="skillContent">

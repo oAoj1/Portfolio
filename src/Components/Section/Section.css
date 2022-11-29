@@ -42,6 +42,10 @@
     font-size: 1.5em;
 }
 
+.joaoContent p span{
+    filter: drop-shadow(3px 3px 5px rgba(0,255,255,0.3));
+}
+
 .skillContent{
     margin: 5em auto;
     width: 100%;
@@ -243,7 +247,7 @@
     width: 100%;
     max-width: 80%;
     display: flex;
-    margin:-5em auto 2em auto;
+    margin:3em auto;
     flex-direction: column;
     border-radius: 20px;
     padding: 20px 0;
@@ -331,8 +335,36 @@
         max-width: 80%;
     }
 
+    .techContent ul{
+        display: flex;
+        flex-direction:column ;
+    }
+
+    .techContent ul li svg{
+        width: 90px;
+        height: 90px;
+    }
+
+    .techContent ul li{
+        font-size: 2em;
+    }
+
     .softSkillsContent ul li{
         margin: 1em 0;
+    }
+
+    .softSkillsContent ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .softSkillsContent ul li{
+        font-size: 2em;
+    }
+
+    .softSkillsContent ul li svg{
+        width: 90px;
+        height: 90px;
     }
 
     .contentOne,
