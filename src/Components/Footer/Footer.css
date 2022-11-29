@@ -41,3 +41,15 @@ footer{
 .logoContentF img:hover{
     transform: translateY(-5px);
 }
+
+@media screen and (max-width:900px){
+    footer{
+        flex-direction: column;
+        padding: 2em 0 1em 0;
+    }
+
+    .logoContentF{
+        margin-top: 1em;
+    }
+
+}
