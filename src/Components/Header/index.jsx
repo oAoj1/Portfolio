@@ -2,7 +2,6 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
-import { RiWhatsappFill } from 'react-icons/ri'
 
 export default function Header(){
     return(
