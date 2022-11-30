@@ -429,6 +429,8 @@
     .softSkillsContent ul{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: auto;
     }
 
     .softSkillsContent ul li{
@@ -445,6 +447,16 @@
     .contentThree,
     .contentFour{
         flex-wrap: wrap;
+    }
+
+    .reactTitle,
+    .coursesTitle,
+    .repositoriesTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
     }
 
 }
