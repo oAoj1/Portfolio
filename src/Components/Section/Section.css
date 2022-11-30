@@ -459,4 +459,19 @@
         text-align: center;
     }
 
+    .filterContent{
+        margin:2em auto 0 auto;
+    }
+
+    .filterContent h4{
+        margin: 0 auto 2em 0;
+        font-size: 1.5em;
+    }
+
+    .filterContent ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 }
