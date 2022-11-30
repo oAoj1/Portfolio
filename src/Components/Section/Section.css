@@ -268,6 +268,58 @@
     margin: auto;
 }
 
+.filterContent{
+    width: 100%;
+    max-width: max-content;
+    margin: 2em 2em 0 2em;
+}
+
+.filterContent h4{
+    text-decoration: underline;
+    font-style: italic;
+    text-align: left;
+    margin: 1em 0 0 1em;
+    font-size: 1em;
+}
+
+.filterContent ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.filterContent ul li{
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filterContent ul li:hover{
+    transform: translateY(-5px);
+}
+
+.filterContent ul li svg{
+    width: 50px;
+    height: 50px;
+}
+
+.reactTitle,
+.coursesTitle,
+.repositoriesTitle{
+    display: flex;
+    align-items: center;
+}
+
+.reactTitle svg,
+.coursesTitle svg,
+.repositoriesTitle svg{
+    margin: 0 1em;
+    width: 50px;
+    height: 50px;
+}
+
 .subContentProjects{
     width: 100%;
     padding: 2em;
@@ -394,4 +446,5 @@
     .contentFour{
         flex-wrap: wrap;
     }
+
 }

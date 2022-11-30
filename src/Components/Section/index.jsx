@@ -17,7 +17,8 @@ import { AiFillHeart } from 'react-icons/ai'
 import { FaHandRock } from 'react-icons/fa'
 import { GiThink } from 'react-icons/gi'
 import { MdSchool } from 'react-icons/md'
-import { BsClockFill, BsFillClockFill } from 'react-icons/bs'
+import { BsClockFill } from 'react-icons/bs'
+import { RiGitRepositoryFill } from 'react-icons/ri'
 
 
 export default function Section(){
@@ -81,11 +82,23 @@ export default function Section(){
                     <h2>Meus projetos</h2>
                     <p>Enquanto estudava as tecnologias fui colocando meu aprendizado em prática e criando projetos, confira alguns:</p>
 
+                    <div className="filterContent">
+                        <h4>Filtre os projetos:</h4>
+                        <ul>
+                            <li>todos</li>
+                            <li><FaReact title='React'/></li>
+                            <li><GiBrain title='Cursos'/></li>
+                            <li><RiGitRepositoryFill title='Repositórios'/></li>
+                        </ul>
+                    </div>
+
                     <div className="subContentProjects">
 
                         <hr className='linha'/>
 
-                        <h2>React</h2>
+                        <div className="reactTitle">
+                            <h2>React</h2><FaReact/>
+                        </div>
 
                         <div className="contentOne">
                             <div className="innerProjectsContent">
@@ -134,10 +147,34 @@ export default function Section(){
                         </div>
 
                         <hr className='linha'/>
-                                    
-                        <h2>Outros repositórios</h2>
+
+                        <div className="coursesTitle">
+                            <h2>Cursos</h2><GiBrain/>
+                        </div>
 
                         <div className="contentThree">
+                            <div className="innerProjectsContent">
+                                <img src="/imagens/organo.png" alt="organo" />
+                                <h3>Organograma</h3>
+                                <span>Organize seu equipe com o organograma</span>
+                                <a target="_blank" href="https://organograma-oaoj1.vercel.app">Clique aqui</a>
+                            </div>
+
+                            <div className="innerProjectsContent">
+                                <BsClockFill className='clockLogo'/>
+                                <h3>Estudos</h3>
+                                <span>Cronometre seu tempo de estudo</span>
+                                <a target="_blank" href="https://alura-studies-oaoj1.vercel.app">Clique aqui</a>
+                            </div>
+                        </div>
+
+                        <hr className='linha'/>
+                                    
+                        <div className="repositoriesTitle">
+                            <h2>Outros repositórios</h2><RiGitRepositoryFill/>
+                        </div>
+
+                        <div className="contentFour">
 
                             <div className="innerProjectsContent">
                                 <SiJavascript className='jsLogo'/>
@@ -154,28 +191,6 @@ export default function Section(){
                             </div>
 
                         </div>
-
-                        <hr className='linha'/>
-
-                        <h2>Cursos</h2>
-
-                        <div className="contentFour">
-                            <div className="innerProjectsContent">
-                                <img src="/imagens/organo.png" alt="organo" />
-                                <h3>Organograma</h3>
-                                <span>Organize seu equipe com o organograma</span>
-                                <a target="_blank" href="https://organograma-oaoj1.vercel.app">Clique aqui</a>
-                            </div>
-
-                            <div className="innerProjectsContent">
-                                <BsClockFill className='clockLogo'/>
-                                <h3>Estudos</h3>
-                                <span>Cronometre seu tempo de estudo</span>
-                                <a target="_blank" href="https://alura-studies-oaoj1.vercel.app">Clique aqui</a>
-                            </div>
-                        </div>
-
-                        
 
                     </div>
 
