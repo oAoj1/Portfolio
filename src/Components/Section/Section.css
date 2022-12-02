@@ -253,6 +253,53 @@
     padding: 20px 0;
 }
 
+.filterContent{
+    width: 100;
+    max-width: max-content;
+    margin: 1em 2em;
+    list-style: none;
+}
+
+.filterContent h3{
+    font-size: 1.5em;
+}
+
+.filterContent input{
+    margin: 0.5em 0;
+    font-size:1em;
+    outline: 0;
+    padding:5px;
+}
+
+.filterContent li{
+    padding: 0.2em 0;
+}
+
+.inputContent{
+    display: flex;
+    align-items: center;
+}
+
+.inputContent button{
+    padding: 5px;
+    margin-left: 0.5em;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+
+.inputContent button svg{
+    display: flex;
+    margin: auto;
+}
+
+.inputContent svg{
+    cursor: pointer;
+    margin-left: 0.5em;
+    width: 30px;
+    height: 30px;
+}
+
 .myProjectsContent h2{
     font-size: 2.5em;
     text-align: center;
@@ -280,7 +327,6 @@
 .coursesTitle h2,
 .repositoriesTitle h2{
     text-align: center;
-    color: #0000ff;
 }
 
 .reactTitle svg,
@@ -396,6 +442,7 @@
 
     .softSkillsContent ul li{
         margin: 1em auto;
+        font-size: 2em;
     }
 
     .softSkillsContent ul{
@@ -403,10 +450,6 @@
         flex-direction: column;
         justify-content: center;
         margin: auto;
-    }
-
-    .softSkillsContent ul li{
-        font-size: 2em;
     }
 
     .softSkillsContent ul li svg{

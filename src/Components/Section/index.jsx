@@ -1,7 +1,5 @@
 import './Section.css'
 
-import { motion } from 'framer-motion'
-
 import { FaReact } from 'react-icons/fa'
 import { DiJavascript1 } from 'react-icons/di'
 import { SiJavascript } from 'react-icons/si'
@@ -12,17 +10,50 @@ import { FaPython } from 'react-icons/fa'
 import { SiTypescript } from 'react-icons/si'
 
 import { GiBrain } from 'react-icons/gi'
-import { BiHappyBeaming } from 'react-icons/bi'
+import { BiHappyBeaming, BiSearch } from 'react-icons/bi'
 import { AiFillHeart } from 'react-icons/ai'
 import { FaHandRock } from 'react-icons/fa'
 import { GiThink } from 'react-icons/gi'
 import { MdSchool } from 'react-icons/md'
 import { BsClockFill } from 'react-icons/bs'
 import { RiGitRepositoryFill } from 'react-icons/ri'
+import { BsSearch } from 'react-icons/bs'
 import { useState } from 'react'
 
 
 export default function Section(){
+
+    const [filtros,setFiltros] = useState('')
+
+    const pesquisarPor = [
+        "todos",
+        "react",
+        "cursos",
+        "repositorios",
+    ]
+
+    function filterSubmit(event){
+        event.preventDefault()
+        const pesquisa = filtros.trim().toLowerCase().replaceAll(' ','')
+        console.log(pesquisa);
+
+        if(pesquisa == pesquisarPor[0]){
+            alert('todos')
+
+        }else if(pesquisa == pesquisarPor[1]){
+            alert('react')
+
+        }else if(pesquisa == pesquisarPor[2]){
+            alert('cursos')
+
+        }else if(pesquisa == pesquisarPor[3]){
+            alert('repositorios')
+
+        }else{
+            alert('sintaxe incorreta ou filtro inexistente')
+
+        }
+    }
     
     return(
         <section>
@@ -83,6 +114,28 @@ export default function Section(){
                 <div className="myProjectsContent">
                     <h2>Meus projetos</h2>
                     <p>Enquanto estudava as tecnologias fui colocando meu aprendizado em prática e criando projetos, confira alguns:</p>
+
+                    <ul className='filterContent'>
+                        <h3>Filtre por:</h3>
+
+                        <form 
+                            className="inputContent" 
+                            onSubmit={filterSubmit}
+                        >
+                            <input 
+                                type="text" 
+                                onChange={filtros => setFiltros(filtros.target.value)}
+                            />
+                            <button>
+                                <BiSearch/>
+                            </button>
+                        </form>
+                        
+                            <li>Todos</li>
+                            <li>React</li>
+                            <li>Cursos</li>
+                            <li>Repositórios</li>
+                    </ul>
 
                     <div className="subContentProjects">
 
