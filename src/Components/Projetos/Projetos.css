@@ -1,0 +1,188 @@
+.projectsContent{
+    width: 100%;
+}
+
+.myProjectsContent{
+    background:linear-gradient(-60deg,#ffffff,#00ffff);
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    margin:3em auto;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.filterContent{
+    width: 100;
+    max-width: max-content;
+    margin: 1em 2em;
+    list-style: none;
+}
+
+.filterContent h3{
+    font-size: 1.5em;
+}
+
+.filterContent input{
+    margin: 0.5em 0;
+    font-size:1em;
+    outline: 0;
+    padding:5px;
+}
+
+.filterContent li{
+    padding: 0.2em 0;
+}
+
+.inputContent{
+    display: flex;
+    align-items: center;
+}
+
+.inputContent button{
+    padding: 5px;
+    margin-left: 0.5em;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+
+.inputContent button svg{
+    display: flex;
+    margin: auto;
+}
+
+.inputContent svg{
+    cursor: pointer;
+    margin-left: 0.5em;
+    width: 30px;
+    height: 30px;
+}
+
+.errosContent{
+    text-transform: uppercase;
+    color: #dc143c;
+    font-weight: bold;
+}
+
+.myProjectsContent h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.myProjectsContent p{
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.reactTitle,
+.coursesTitle,
+.repositoriesTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactTitle h2,
+.coursesTitle h2,
+.repositoriesTitle h2{
+    text-align: center;
+}
+
+.reactTitle svg,
+.coursesTitle svg,
+.repositoriesTitle svg{
+    margin: 0 1em;
+    width: 50px;
+    height: 50px;
+    color: #0000ff;
+}
+
+.subContentProjects{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.innerProjectsContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 2em;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.7));
+}
+
+.innerProjectsContent h3{
+    font-size: 1.5em;
+    margin: 0.5em auto;
+}
+
+.innerProjectsContent span{
+    font-size: 1.2em;
+}
+
+.innerProjectsContent img{
+    max-width: 100px;
+    margin: auto;
+}
+
+.innerProjectsContent a{
+    max-width: max-content;
+    margin:0.5em auto;
+}
+
+.contentOne,
+.contentTwo,
+.contentThree,
+.contentFour{
+    display: flex;
+}
+
+.contentThree svg,
+.contentFour svg{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.jsLogo{
+    color: #d8d803;
+}
+
+.schoolLogo{
+    color: #7c061d;
+}
+
+.clockLogo{
+    color: #052c2c;
+}
+
+@media screen and (max-width:900px){
+    .contentOne,
+    .contentTwo,
+    .contentThree,
+    .contentFour{
+        flex-wrap: wrap;
+    }
+
+    .reactTitle,
+    .coursesTitle,
+    .repositoriesTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto 3em auto;
+        text-align: center;
+    }
+}

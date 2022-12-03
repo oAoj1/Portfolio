@@ -1,5 +1,9 @@
 import './Section.css'
 
+import { useState } from 'react'
+import { useRef } from 'react'
+import { useLayoutEffect } from 'react'
+
 import { FaReact } from 'react-icons/fa'
 import { DiJavascript1 } from 'react-icons/di'
 import { SiJavascript } from 'react-icons/si'
@@ -18,41 +22,29 @@ import { MdSchool } from 'react-icons/md'
 import { BsClockFill } from 'react-icons/bs'
 import { RiGitRepositoryFill } from 'react-icons/ri'
 import { BsSearch } from 'react-icons/bs'
-import { useState } from 'react'
+import { AiFillEye } from 'react-icons/ai'
 
 
 export default function Section(){
 
     const [filtros,setFiltros] = useState('')
+    const [erros,setErros] = useState('')
 
-    const pesquisarPor = [
-        "todos",
-        "react",
-        "cursos",
-        "repositorios",
-    ]
+    const reactRef = useRef()
+    const coursesRef = useRef()
+    const repositoriesRef = useRef()
+
+    const reactContent = reactRef.current
+    const coursesContent = coursesRef.current
+    const repositoriesContent = repositoriesRef.current
 
     function filterSubmit(event){
         event.preventDefault()
-        const pesquisa = filtros.trim().toLowerCase().replaceAll(' ','')
-        console.log(pesquisa);
 
-        if(pesquisa == pesquisarPor[0]){
-            alert('todos')
+        const tirandoAcentos = filtros.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+        const pesquisa = tirandoAcentos.trim().replaceAll(' ','').toLowerCase()
 
-        }else if(pesquisa == pesquisarPor[1]){
-            alert('react')
-
-        }else if(pesquisa == pesquisarPor[2]){
-            alert('cursos')
-
-        }else if(pesquisa == pesquisarPor[3]){
-            alert('repositorios')
-
-        }else{
-            alert('sintaxe incorreta ou filtro inexistente')
-
-        }
+        setFiltros('')
     }
     
     return(
@@ -103,6 +95,7 @@ export default function Section(){
                             <li><AiFillHeart/>empatia</li>
                             <li><FaHandRock/>dedicação</li>
                             <li><GiThink/>curiosidade</li>
+                            <li><AiFillEye/>observação</li>
                         </ul>
                     </div>
                 </div>
@@ -117,31 +110,28 @@ export default function Section(){
 
                     <ul className='filterContent'>
                         <h3>Filtre por:</h3>
-
-                        <form 
-                            className="inputContent" 
-                            onSubmit={filterSubmit}
-                        >
+                        
+                        <form className="inputContent" onSubmit={filterSubmit}>
                             <input 
                                 type="text" 
                                 onChange={filtros => setFiltros(filtros.target.value)}
-                            />
+                                value={filtros}/>
+
                             <button>
                                 <BiSearch/>
                             </button>
                         </form>
-                        
-                            <li>Todos</li>
+
                             <li>React</li>
                             <li>Cursos</li>
                             <li>Repositórios</li>
                     </ul>
 
                     <div className="subContentProjects">
+                    
+                        <div ref={reactRef} className="reactContent">
 
                         <hr className='linha'/>
-
-                        <div className="reactContent">
 
                             <div className="reactTitle">
                                 <h2>React</h2><FaReact/>
@@ -195,9 +185,9 @@ export default function Section(){
 
                         </div>
 
-                        <hr className='linha'/>
+                        <div ref={coursesRef} className="coursesContent">
 
-                        <div className="coursesContent">
+                        <hr className='linha'/>
 
                             <div className="coursesTitle">
                                 <h2>Cursos</h2><GiBrain/>
@@ -220,9 +210,9 @@ export default function Section(){
                             </div>
                         </div>
                         
+                        <div ref={repositoriesRef} className="repositoriesContent">
+
                         <hr className='linha'/>
-                        
-                        <div className="repositoriesContent">
 
                             <div className="repositoriesTitle">
                                 <h2>Outros repositórios</h2><RiGitRepositoryFill/>

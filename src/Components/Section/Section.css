@@ -237,6 +237,10 @@
     color: #038181;
 }
 
+.softSkillsContent ul li:nth-child(6):hover{
+    color: #fff;
+}
+
 .projectsContent{
     width: 100%;
 }
@@ -298,6 +302,12 @@
     margin-left: 0.5em;
     width: 30px;
     height: 30px;
+}
+
+.errosContent{
+    text-transform: uppercase;
+    color: #dc143c;
+    font-weight: bold;
 }
 
 .myProjectsContent h2{
@@ -426,35 +436,21 @@
         max-width: 80%;
     }
 
-    .techContent ul{
+    .techContent ul,
+    .softSkillsContent ul{
         display: flex;
         flex-direction:column ;
     }
 
-    .techContent ul li svg{
-        width: 90px;
-        height: 90px;
-    }
-
-    .techContent ul li{
-        font-size: 2em;
-    }
-
-    .softSkillsContent ul li{
-        margin: 1em auto;
-        font-size: 2em;
-    }
-
-    .softSkillsContent ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-    }
-
+    .techContent ul li svg,
     .softSkillsContent ul li svg{
         width: 90px;
         height: 90px;
+    }
+
+    .techContent ul li,
+    .softSkillsContent ul li{
+        font-size: 2em;
     }
 
     .contentOne,
