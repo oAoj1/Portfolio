@@ -1,4 +1,6 @@
 import '../Projetos.css'
+import { GiBrain } from 'react-icons/gi'
+import { BsClockFill } from 'react-icons/bs'
 
 export default function Cursos(){
 

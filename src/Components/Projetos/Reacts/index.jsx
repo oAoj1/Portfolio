@@ -1,5 +1,7 @@
 import '../Projetos.css'
 
+import { FaReact } from 'react-icons/fa'
+
 export default function Reacts(){
     return(
         <div>
@@ -33,7 +35,7 @@ export default function Reacts(){
                             <a target="_blank" href="https://cortico.vercel.app">Clique aqui</a>
                         </div>
                     </div>
-
+                                          
                     <div className="contentTwo">
                         <div className="innerProjectsContent">
                             <img src="/imagens/dietaa.png" alt="dieta" />
@@ -56,8 +58,7 @@ export default function Reacts(){
                             <a target="_blank" href="https://indice-massa-corporal.vercel.app">Clique aqui</a>
                         </div> 
                     </div>
-
-                </div>
+            </div>
         </div>
     )
 }

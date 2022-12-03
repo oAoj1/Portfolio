@@ -7,16 +7,16 @@ const coursesContent = <Cursos></Cursos>
 const repositoriesContent = <Repositorios></Repositorios>
 
 export const projetosContent = [
-    {   
-        name:'Reacts',
+    {
+        name:'react',
         project:reactContent
     },
-    {   
-        name:'Cursos',
+    {
+        name:'cursos',
         project:coursesContent
     },
     {
-        name:'Repositorios',
+        name:'repositorios',
         project:repositoriesContent
     }
 ]

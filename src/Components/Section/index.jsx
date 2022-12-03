@@ -1,39 +1,33 @@
 import './Section.css'
+import '../Projetos/Projetos.css'
 
-import { useState } from 'react'
 import { projetosContent } from '../../Data'
-
 import { FaReact } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa'
 import { FaHandRock } from 'react-icons/fa'
-
 import { AiFillHtml5 } from 'react-icons/ai'
 import { AiFillEye } from 'react-icons/ai'
 import { AiFillHeart } from 'react-icons/ai'
-
 import { DiJavascript1 } from 'react-icons/di'
 import { DiCss3 } from 'react-icons/di'
-
-import { GiBrain } from 'react-icons/gi'
 import { GiThink } from 'react-icons/gi'
-
+import { GiBrain } from 'react-icons/gi'
 import { BsSearch } from 'react-icons/bs'
-import { BsClockFill } from 'react-icons/bs'
-
-import { SiJavascript } from 'react-icons/si'
 import { SiTypescript } from 'react-icons/si'
-
 import { IoLogoNodejs } from 'react-icons/io'
-import { BiHappyBeaming, BiSearch } from 'react-icons/bi'
-import { MdSchool } from 'react-icons/md'
-import { RiGitRepositoryFill } from 'react-icons/ri'
+import { BiHappyBeaming } from 'react-icons/bi'
+import { useState } from 'react'
 
 export default function Section(){
 
-    function filterSubmit(event){
-        event.preventDefault()
-        
-    }
+    const [filtro,setFiltro] = useState('')
+    const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+    const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
+
+    const filtragem = projetosContent.filter(
+        (proj) => 
+        proj.name.startsWith(pesquisaFiltrada)
+    )
     
     return(
         <section>
@@ -89,16 +83,27 @@ export default function Section(){
                 </div>
 
             </div>
+        
+            <div className="filterContent">
+                <h3>Filtre por: </h3>
+                <ul>
+                    <li>React</li>
+                    <li>Cursos</li>
+                    <li>Repositórios</li>
+                </ul>
+
+                <input type="search" onChange={filtro => setFiltro(filtro.target.value)}/>
+
+            </div>
 
             <ul>
-                {projetosContent.map((proj) =>(
+                {filtragem.map((proj) =>(
                     <li key={proj.name}>
                         {proj.project}
                     </li>
                 ))}
             </ul>
-            
-  
+
         </section>
     )
 }
