@@ -1,12 +1,8 @@
-import { useRef } from "react"
+import '../Projetos.css'
 
 export default function Repositorios(){
-
-    const repositoriesRef = useRef()
-
     return(
-        
-        <div ref={repositoriesRef} className="repositoriesContent">
+        <div className="repositoriesContent">
 
         <hr className='linha'/>
 

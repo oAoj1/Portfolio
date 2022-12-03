@@ -1,11 +1,9 @@
-import { useRef } from "react"
+import '../Projetos.css'
 
 export default function Cursos(){
-    
-    const coursesRef = useRef()
 
     return(
-        <div ref={coursesRef} className="coursesContent">
+        <div className="coursesContent">
 
         <hr className='linha'/>
 
