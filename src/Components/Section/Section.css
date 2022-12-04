@@ -1,6 +1,10 @@
+.joaoContent,.skillContent,.projectsContent{
+    visibility: hidden;
+}
+
 .linha{
     width: 100%;
-    margin: auto;
+    margin:2em auto;
     max-width: 90%;
 }
 
@@ -32,6 +36,7 @@
 .joaoContent h1 span{
     color: #00ffff;
     filter: drop-shadow(5px 5px 7px rgba(0,255,255,0.5));
+    animation: glowing 3.5s ease-in-out infinite;
 }
 
 .joaoContent p{
@@ -40,6 +45,24 @@
     margin-top: 0.3em;
     color: #ccc;
     font-size: 1.5em;
+}
+
+@keyframes glowing{
+    0%{
+        filter: drop-shadow(3px 3px 5px rgba(0,255,255,0.1));
+    }
+    25%{
+        filter: drop-shadow(3px 3px 5px rgba(0,255,255,0.5));
+    }
+    50%{
+        filter: drop-shadow(3px 3px 5px rgba(0,255,255,1));
+    }
+    75%{
+        filter: drop-shadow(3px 3px 5px rgba(0,255,255,0.5));
+    }
+    100%{
+        filter: drop-shadow(3px 3px 5px rgba(0,255,255,0.1));
+    }
 }
 
 .joaoContent p span{
@@ -260,7 +283,7 @@
 .filterContent{
     width: 100;
     max-width: max-content;
-    margin: 1em 2em;
+    margin: 1em 3em;
     list-style: none;
 }
 
@@ -273,6 +296,10 @@
     font-size:1em;
     outline: 0;
     padding:5px;
+}
+
+.filterContent ul{
+    list-style-position: inside;
 }
 
 .filterContent li{
@@ -302,12 +329,6 @@
     margin-left: 0.5em;
     width: 30px;
     height: 30px;
-}
-
-.errosContent{
-    text-transform: uppercase;
-    color: #dc143c;
-    font-weight: bold;
 }
 
 .myProjectsContent h2{
