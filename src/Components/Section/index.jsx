@@ -1,6 +1,7 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
+import { useState } from 'react'
 import { projetosContent } from '../../Data'
 import { FaReact } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa'
@@ -16,19 +17,20 @@ import { BsSearch } from 'react-icons/bs'
 import { SiTypescript } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { BiHappyBeaming } from 'react-icons/bi'
-import { useState } from 'react'
+
 
 export default function Section(){
 
     const [filtro,setFiltro] = useState('')
+    const [erros,setErros] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
     const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
 
     const filtragem = projetosContent.filter(
         (proj) => 
-        proj.name.startsWith(pesquisaFiltrada)
+        proj.name.includes(pesquisaFiltrada)
     )
-    
+
     return(
         <section>
             <div className="infoContent">
@@ -83,26 +85,37 @@ export default function Section(){
                 </div>
 
             </div>
-        
-            <div className="filterContent">
-                <h3>Filtre por: </h3>
-                <ul>
-                    <li>React</li>
-                    <li>Cursos</li>
-                    <li>Repositórios</li>
-                </ul>
 
-                <input type="search" onChange={filtro => setFiltro(filtro.target.value)}/>
+            <div className="projectsContent">
+                <div className="myProjectsContent">
+                    <h2>Meus projetos</h2>
+                    <p>Ao longo dos meus estudos fui colocando em prática o que aprendi, veja algum dos projetos em que criei</p>
+                    <div className="filterContent">
+                        <h3>Filtre por: </h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Cursos</li>
+                            <li>Repositórios</li>
+                        </ul>
 
+                        <input type="search" onChange={filtro => setFiltro(filtro.target.value)}/>
+                    </div>
+
+                    <div className="errosContent">
+                        {erros}
+                    </div>
+
+                    <ul className='projetosFiltrados'>
+                        {filtragem.map((proj) =>(
+                            <li key={proj.name}>
+                                {proj.project}
+                            </li>
+                        ))}
+                    </ul>
+
+                </div>
+                
             </div>
-
-            <ul>
-                {filtragem.map((proj) =>(
-                    <li key={proj.name}>
-                        {proj.project}
-                    </li>
-                ))}
-            </ul>
 
         </section>
     )

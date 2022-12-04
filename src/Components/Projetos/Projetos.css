@@ -14,6 +14,21 @@
     padding: 20px 0;
 }
 
+.myProjectsContent h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.myProjectsContent p{
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    width: 80%;
+    margin: auto;
+}
+
 .filterContent{
     width: 100;
     max-width: max-content;
@@ -67,19 +82,8 @@
     font-weight: bold;
 }
 
-.myProjectsContent h2{
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: bold;
-    margin: 0.5em 0;
-}
-
-.myProjectsContent p{
-    text-align: center;
-    font-size: 1.5em;
-    width: 100%;
-    width: 80%;
-    margin: auto;
+.projetosFiltrados{
+    list-style: none;
 }
 
 .reactTitle,
