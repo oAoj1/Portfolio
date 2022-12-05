@@ -1,9 +1,7 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
-import ScrollReveal from 'scrollreveal';
-import sr from 'scrollreveal'
-import { useState,useRef } from 'react'
+import { useState } from 'react'
 import { projetosContent } from '../../Data'
 import { FaReact } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa'
@@ -26,34 +24,29 @@ export default function Section(){
     const [filtro,setFiltro] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
     const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
-    const jC = useRef()
-    const sC = useRef()
-    const pC = useRef()
-    const joaoContent = jC.current
-    const skillContent = sC.current
-    const projectsContent = pC.current
 
     const filtragem = projetosContent.filter(
         (proj) => 
         proj.name.includes(pesquisaFiltrada)
     )
 
-    window.sr = ScrollReveal({reset:true})
-    ScrollReveal().reveal('.joaoContent',{duration:1000})
-    ScrollReveal().reveal('.skillContent',{duration:1000})
-    ScrollReveal().reveal('.projectsContent',{duration:1000})
-
     return(
         <section>
             <div className="infoContent">
 
                 <h3>Bem vindo ao meu portifólio</h3>
-                <div className="joaoContent" ref={joaoContent}>
-                    <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
-                    <p>Estou estudando <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior ou estagiário</p>
+                
+                <div className="superContent">
+                    <div className="joaoContent">
+                        <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
+                        <p>Estou estudando <span>Front-end web</span> e busco 1º vaga como desenvolvedor júnior ou estagiário</p>
+                    </div>
+                    <div className="reactLogoContent">
+                        <FaReact></FaReact>
+                    </div>
                 </div>
                 
-                <div className="skillContent" ref={skillContent}>
+                <div className="skillContent">
 
                     <div className="hardSkillsContent">
                         <h2> <i>Hard Skills</i> </h2>
@@ -98,7 +91,7 @@ export default function Section(){
                 
             </div>
 
-            <div className="projectsContent" ref={projectsContent}> 
+            <div className="projectsContent">  
                 <div className="myProjectsContent">
                     <h2>Meus projetos</h2>
                     <p>Ao longo dos meus estudos fui colocando em prática o que aprendi, veja algum dos projetos em que criei</p>
