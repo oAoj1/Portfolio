@@ -1,4 +1,5 @@
 import './Header.css'
+import '../Section/Section.css'
 import { Link } from 'react-router-dom'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'

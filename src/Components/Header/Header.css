@@ -17,6 +17,7 @@ header{
     max-width: 80px;
     filter: drop-shadow(5px 5px 7px rgba(0,0,0,0.7));
     transition: 0.3s;
+    animation:glowing 3.5s infinite;
 }
 
 .logoContent img:hover{
