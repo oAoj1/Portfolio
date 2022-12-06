@@ -1,6 +1,6 @@
 import '../Projetos.css'
-import { FaReact } from 'react-icons/fa'
 import ScrollReveal from 'scrollreveal'
+import { FaReact } from 'react-icons/fa'
 
 export default function Reacts(){
 

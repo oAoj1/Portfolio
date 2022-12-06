@@ -1,11 +1,22 @@
 import './Footer.css'
+import ScrollReveal from 'scrollreveal'
 import { Link } from 'react-router-dom'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 
 export default function Footer(){
+
+    function carregar(){
+        ScrollReveal().reveal('.mediasContentF',{
+            duration:1500
+        })
+        ScrollReveal().reveal('.logoContentF',{
+            duration:2000
+        })
+    }
+
     return(
-        <footer>
+        <footer onLoad={carregar}>
 
             <ul className='mediasContentF'>
                 <li>

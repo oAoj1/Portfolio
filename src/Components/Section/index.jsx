@@ -28,15 +28,12 @@ export default function Section(){
         ScrollReveal().reveal('.superContent',{
             duration:1000
         }) 
-
         ScrollReveal().reveal('.joaoContent',{
             duration:1500
         }) 
-
         ScrollReveal().reveal('.reactLogoContent',{
             duration:2000
         }) 
-
         ScrollReveal().reveal('.skillContent',{
             duration:1000
         }) 
@@ -50,11 +47,15 @@ export default function Section(){
             duration:1000
         })
         ScrollReveal().reveal('.myProjectsContent',{
-            duration:1000
-        })
-        ScrollReveal().reveal('.projetosFiltrados',{
             duration:1500
         })
+        ScrollReveal().reveal('.filterContent',{
+            duration:1750
+        })
+        ScrollReveal().reveal('.projetosFiltrados',{
+            duration:2000
+        })
+        
     } 
 
     const [filtro,setFiltro] = useState('')

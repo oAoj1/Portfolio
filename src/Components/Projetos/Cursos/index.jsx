@@ -1,7 +1,8 @@
 import '../Projetos.css'
+import ScrollReveal from 'scrollreveal'
 import { GiBrain } from 'react-icons/gi'
 import { BsClockFill } from 'react-icons/bs'
-import ScrollReveal from 'scrollreveal'
+
 
 export default function Cursos(){
     
