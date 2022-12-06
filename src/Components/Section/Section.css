@@ -457,6 +457,14 @@
         text-align: center;
     }
 
+    .superContent{
+        flex-direction: column;
+    }
+
+    .reactLogoContent{
+        margin: auto;
+    }
+
     .joaoContent{
         text-align: center;
     }
@@ -473,19 +481,21 @@
 
     .techContent ul,
     .softSkillsContent ul{
+        margin:2em auto;
         display: flex;
         flex-direction:column ;
+    }
+
+    .techContent ul li,
+    .softSkillsContent ul li{
+        font-size: 2em;
+        margin: 1em 0;
     }
 
     .techContent ul li svg,
     .softSkillsContent ul li svg{
         width: 90px;
         height: 90px;
-    }
-
-    .techContent ul li,
-    .softSkillsContent ul li{
-        font-size: 2em;
     }
 
     .contentOne,

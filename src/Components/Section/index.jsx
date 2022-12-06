@@ -87,8 +87,8 @@ export default function Section(){
                             <li><AiFillEye/>observação</li>
                         </ul>
                     </div>
-                    </div>
-                
+                </div>
+
             </div>
 
             <div className="projectsContent">  
