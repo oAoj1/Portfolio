@@ -1,11 +1,18 @@
 import '../Projetos.css'
 import { GiBrain } from 'react-icons/gi'
 import { BsClockFill } from 'react-icons/bs'
+import ScrollReveal from 'scrollreveal'
 
 export default function Cursos(){
+    
+    function carregar(){
+        ScrollReveal().reveal('.coursesContent',{
+            duration:1000
+        })
+    }
 
     return(
-        <div className="coursesContent">
+        <div onLoad={carregar} className="coursesContent">
 
         <hr className='linha'/>
 

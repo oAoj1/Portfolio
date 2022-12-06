@@ -1,11 +1,18 @@
 import '../Projetos.css'
-
 import { FaReact } from 'react-icons/fa'
+import ScrollReveal from 'scrollreveal'
 
 export default function Reacts(){
+
+    function carregar(){
+        ScrollReveal().reveal('.reactContent',{
+            duration:1000
+        })
+    }
+
     return(
         <div>
-            <div className="reactContent">
+            <div onLoad={carregar} className="reactContent">
 
                 <hr className='linha'/>
 

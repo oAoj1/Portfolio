@@ -1,11 +1,19 @@
 import '../Projetos.css'
+import ScrollReveal from 'scrollreveal'
 import { RiGitRepositoryFill } from 'react-icons/ri'
 import { SiJavascript } from 'react-icons/si'
 import { MdSchool } from 'react-icons/md'
 
 export default function Repositorios(){
+
+    function carregar(){
+        ScrollReveal().reveal('.repositoriesContent',{
+            duration:1000
+        })    
+    }
+
     return(
-        <div className="repositoriesContent">
+        <div onLoad={carregar} className="repositoriesContent">
 
         <hr className='linha'/>
 

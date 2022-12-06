@@ -1,6 +1,7 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
+import ScrollReveal from 'scrollreveal'
 import { useState } from 'react'
 import { projetosContent } from '../../Data'
 import { FaReact } from 'react-icons/fa'
@@ -21,6 +22,41 @@ import { BiHappyBeaming } from 'react-icons/bi'
 
 export default function Section(){
 
+    function carregar(){
+        window.sr = ScrollReveal({reset:true})
+
+        ScrollReveal().reveal('.superContent',{
+            duration:1000
+        }) 
+
+        ScrollReveal().reveal('.joaoContent',{
+            duration:1500
+        }) 
+
+        ScrollReveal().reveal('.reactLogoContent',{
+            duration:2000
+        }) 
+
+        ScrollReveal().reveal('.skillContent',{
+            duration:1000
+        }) 
+        ScrollReveal().reveal('.hardSkillsContent',{
+            duration:1500
+        })
+        ScrollReveal().reveal('.softSkillsContent',{
+            duration:2000
+        })
+        ScrollReveal().reveal('.projectsContent',{
+            duration:1000
+        })
+        ScrollReveal().reveal('.myProjectsContent',{
+            duration:1000
+        })
+        ScrollReveal().reveal('.projetosFiltrados',{
+            duration:1500
+        })
+    } 
+
     const [filtro,setFiltro] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
     const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
@@ -28,10 +64,10 @@ export default function Section(){
     const filtragem = projetosContent.filter(
         (proj) => 
         proj.name.includes(pesquisaFiltrada)
-    )
+    ) 
 
     return(
-        <section>
+        <section onLoad={carregar}>
             <div className="infoContent">
 
                 <h3>Bem vindo ao meu portifólio</h3>
