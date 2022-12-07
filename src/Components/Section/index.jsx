@@ -25,9 +25,6 @@ export default function Section(){
     function carregar(){
         window.sr = ScrollReveal({reset:true})
 
-        ScrollReveal().reveal('.superContent',{
-            duration:1000
-        }) 
         ScrollReveal().reveal('.joaoContent',{
             duration:1500
         }) 
@@ -37,20 +34,8 @@ export default function Section(){
         ScrollReveal().reveal('.skillContent',{
             duration:1000
         }) 
-        ScrollReveal().reveal('.hardSkillsContent',{
-            duration:1500
-        })
-        ScrollReveal().reveal('.softSkillsContent',{
-            duration:2000
-        })
         ScrollReveal().reveal('.projectsContent',{
             duration:1000
-        })
-        ScrollReveal().reveal('.myProjectsContent',{
-            duration:1500
-        })
-        ScrollReveal().reveal('.filterContent',{
-            duration:1750
         })
         ScrollReveal().reveal('.projetosFiltrados',{
             duration:2000
