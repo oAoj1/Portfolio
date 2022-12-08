@@ -1,7 +1,6 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
-import ScrollReveal from 'scrollreveal'
 import { useState } from 'react'
 import { projetosContent } from '../../Data'
 import { FaReact } from 'react-icons/fa'
@@ -20,28 +19,7 @@ import { IoLogoNodejs } from 'react-icons/io'
 import { BiHappyBeaming } from 'react-icons/bi'
 
 
-export default function Section(){
-
-    function carregar(){
-        window.sr = ScrollReveal({reset:true})
-
-        ScrollReveal().reveal('.joaoContent',{
-            duration:1500
-        }) 
-        ScrollReveal().reveal('.reactLogoContent',{
-            duration:2000
-        }) 
-        ScrollReveal().reveal('.skillContent',{
-            duration:1000
-        }) 
-        ScrollReveal().reveal('.projectsContent',{
-            duration:1000
-        })
-        ScrollReveal().reveal('.projetosFiltrados',{
-            duration:2000
-        })
-        
-    } 
+export default function Section(){ 
 
     const [filtro,setFiltro] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
@@ -53,7 +31,7 @@ export default function Section(){
     ) 
 
     return(
-        <section onLoad={carregar}>
+        <section>
             <div className="infoContent">
 
                 <h3>Bem vindo ao meu portifólio</h3>

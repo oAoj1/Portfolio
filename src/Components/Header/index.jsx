@@ -3,28 +3,11 @@ import '../Section/Section.css'
 import { Link } from 'react-router-dom'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
-import ScrollReveal from 'scrollreveal'
 
 export default function Header(){
-    function carregar(){
-        window.sr = ScrollReveal({reset:true})
 
-        ScrollReveal().reveal('.logoContent',{
-            duration:1000
-        }) 
-        ScrollReveal().reveal('.spanContent',{
-            duration:1000
-        }) 
-        ScrollReveal().reveal('.logoContent',{
-            duration:1500
-        }) 
-        ScrollReveal().reveal('.mediasContent',{
-            duration:2000
-        }) 
-
-    }
     return(
-        <header onLoad={carregar}>
+        <header>
 
             <div className="logoContent">
                 <Link to="/">
