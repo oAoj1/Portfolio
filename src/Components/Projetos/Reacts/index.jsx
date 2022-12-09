@@ -1,10 +1,12 @@
 import '../Projetos.css'
 import { FaReact } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade';
 
 export default function Reacts(){
 
     return(
         <div>
+            <Fade left>
             <div className="reactContent">
 
                 <hr className='linha'/>
@@ -35,7 +37,7 @@ export default function Reacts(){
                             <a target="_blank" href="https://cortico.vercel.app">Clique aqui</a>
                         </div>
                     </div>
-                                          
+                                        
                     <div className="contentTwo">
                         <div className="innerProjectsContent">
                             <img src="/imagens/dietaa.png" alt="dieta" />
@@ -58,7 +60,9 @@ export default function Reacts(){
                             <a target="_blank" href="https://indice-massa-corporal.vercel.app">Clique aqui</a>
                         </div> 
                     </div>
-            </div>
+                </div>
+            </Fade>
+            
         </div>
     )
 }

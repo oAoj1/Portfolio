@@ -8,7 +8,7 @@ export default function SobreMim(){
             <Header/>
                 <div className="sobreMimContent">
                     <h1>Sobre mim</h1>
-                    <p></p>
+                    
                 </div>
             <Footer/>
         </div>
