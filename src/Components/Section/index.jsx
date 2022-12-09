@@ -44,11 +44,12 @@ export default function Section(){
                         </div>
                     </Fade>
                         
-                    <Fade right>
-                        <div className="reactLogoContent">
-                            <FaReact></FaReact>
-                        </div>
-                    </Fade>   
+                    <div className="reactLogoContent">
+                        <Fade right>
+                            <FaReact/>
+                        </Fade>
+                    </div>
+                       
                 </div>
                 
                 <div className="skillContent">
