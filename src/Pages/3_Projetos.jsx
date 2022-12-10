@@ -7,19 +7,20 @@ import ModeloProjetosRepositorios from '../Components/Projetos/Modelo/ModeloRepo
 
 export default function Projetos(){
     return(
-        <div className='megaContentProjects'>
+        <div>
             <Header/>
-
-                <div className="tituloProjetosContent">
-                    <h1>Projetos</h1>
-                    <h2>Veja com mais detalhes como cada projeto pessoal foi feito e o que foi utilizado</h2>
-                </div>
-            
-                <div className="descricaoProjetosContent">
-                    <ModeloProjetosReact/>
-                    <ModeloProjetosCursos/>
-                    <ModeloProjetosRepositorios/>
-                </div>
+                <div className="megaContentProjects">
+                    <div className="tituloProjetosContent">
+                        <h1>Projetos</h1>
+                        <h2>Veja com mais detalhes como cada projeto pessoal foi feito e o que foi utilizado</h2>
+                    </div>
+                
+                    <div className="descricaoProjetosContent">
+                        <ModeloProjetosReact/>
+                        <ModeloProjetosCursos/>
+                        <ModeloProjetosRepositorios/>
+                    </div>
+                </div> 
             
             <Footer/>
         </div>

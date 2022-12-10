@@ -1,10 +1,24 @@
 .sobreMimContent{
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.4));
     width: 100%;
-    padding: 3em 4em;
+    max-width: 90%;
+    margin: 3em auto;
+    padding:3em 4em;
     background:linear-gradient(45deg,#00ffff,#fff);
 }
 
 .sobreMimContent h1{
     font-size: 4em;
     font-weight: bolder;
+}
+
+.textoContent{
+    width: 100%;
+    max-width: 90%;
+}
+
+.textoContent p{
+    padding: 1em 0;
+    font-size: 1.5em;
 }

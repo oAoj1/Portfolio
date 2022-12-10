@@ -40,7 +40,7 @@ export default function Section(){
                     <Fade left>
                         <div className="joaoContent">
                             <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
-                            <p>Estou estudando <span>React</span> e busco 1º vaga como desenvolvedor júnior front-end web</p>
+                            <p>Estou estudando <span>React</span> e busco 1º vaga como desenvolvedor Front-end</p>
                         </div>
                     </Fade>
                         
