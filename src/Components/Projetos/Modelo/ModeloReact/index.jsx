@@ -32,12 +32,14 @@ export default function ModeloProjetosReact(){
 
     return(
         <div>
+            <h1 className="tituloProjetos">Projetos React</h1>
             <ModeloProjeto
                 imagem="/imagens/dietaa.png"
                 react_icons=''
                 titulo="Dieta"
                 subtitulo="Calcule seus calórico basal e diário, IMC, ingestão de água e +"
                 pacotes={dietaArray}
+                link="https://dieta-nu.vercel.app"
             />
             <ModeloProjeto
                 imagem="/imagens/pesquisa.png"
@@ -45,6 +47,7 @@ export default function ModeloProjetosReact(){
                 titulo="Busque seu CEP"
                 subtitulo="Digite o CEP desejado e encontre os dados de sua localização"
                 pacotes={cepArray}
+                link="https://buscar-cep-kappa.vercel.app"
             />
             <ModeloProjeto
                 imagem="/imagens/cortico.png"
@@ -52,6 +55,7 @@ export default function ModeloProjetosReact(){
                 titulo="O Cortiço"
                 subtitulo="Trabalho de escola com intuito de mostrar sobre a obra O Cortiço do estritor brasileiro Aluísio de Azevedo"
                 pacotes={corticoArray}
+                link="https://cortico.vercel.app"
             />
             <ModeloProjeto
                 imagem="/imagens/esgotos.png"
@@ -59,6 +63,7 @@ export default function ModeloProjetosReact(){
                 titulo="Esgotos"
                 subtitulo="Trabalho de escola com intuito de mostrar sobre o funcionamento dos tratamentos de esgotos"
                 pacotes={esgotosArray}
+                link="https://esgotos.vercel.app"
             />
             <ModeloProjeto
                 imagem="/imagens/imc1.png"
@@ -66,6 +71,7 @@ export default function ModeloProjetosReact(){
                 titulo="IMC 1.0"
                 subtitulo="Calcule seu Indice de massa corporal, primeira versão"
                 pacotes={imc1Array}
+                link="https://imc-fhcq.vercel.app"
             />
             <ModeloProjeto
                 imagem="/imagens/imc2.png"
@@ -73,6 +79,7 @@ export default function ModeloProjetosReact(){
                 titulo="IMC 1.1"
                 subtitulo="Calcule seu Indice de massa corporal, segunda versão"
                 pacotes={imc2Array}
+                link="https://indice-massa-corporal.vercel.app"
             />
         </div>
     )

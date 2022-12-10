@@ -23,6 +23,8 @@ export default function ModeloProjeto(props){
                     )}
                 </ul>
 
+                <a target='_blank' href={props.link}>Clique e saiba mais</a>
+
             </div>
 
             <hr className='linha'/>

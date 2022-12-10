@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import ModeloProjetosReact from '../Components/Projetos/Modelo/ModeloReact'
 import ModeloProjetosCursos from '../Components/Projetos/Modelo/ModeloCursos'
+import ModeloProjetosRepositorios from '../Components/Projetos/Modelo/ModeloRepositorios'
 
 export default function Projetos(){
     return(
@@ -17,6 +18,7 @@ export default function Projetos(){
                 <div className="descricaoProjetosContent">
                     <ModeloProjetosReact/>
                     <ModeloProjetosCursos/>
+                    <ModeloProjetosRepositorios/>
                 </div>
             
             <Footer/>
