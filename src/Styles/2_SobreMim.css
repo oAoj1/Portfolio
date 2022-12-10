@@ -5,7 +5,7 @@
     max-width: 90%;
     margin: 3em auto;
     padding:3em 4em;
-    background:linear-gradient(45deg,#00ffff,#fff);
+    background:linear-gradient(45deg,#01d3d3,#fff);
 }
 
 .sobreMimContent h1{
@@ -24,33 +24,5 @@
 }
 
 strong{
-    filter: drop-shadow(5px 5px 7px rgba(0,0,0,0.9));
-}
-
-.python{
-    color: #0000ff;
-}
-
-.html{
-    color: darkorange;
-}
-
-.css{
-    color: cornflowerblue;
-}
-
-.js{
-    color: #ffd700;
-}
-
-.react{
-    color: #00ffff;
-}
-
-.ts{
-    color: darkblue;
-}
-
-.node{
-    color: greenyellow;
+    filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.9));
 }

@@ -1,3 +1,4 @@
+import Fade from 'react-reveal/Fade';
 import '../Styles/3_Projetos.css'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
@@ -11,14 +12,24 @@ export default function Projetos(){
             <Header/>
                 <div className="megaContentProjects">
                     <div className="tituloProjetosContent">
-                        <h1>Projetos</h1>
-                        <h2>Veja com mais detalhes como cada projeto pessoal foi feito e o que foi utilizado</h2>
+                        <Fade left>
+                            <h1>Projetos</h1>
+                        </Fade>
+                        <Fade right>
+                            <h2>Veja com mais detalhes como cada projeto pessoal foi feito e o que foi utilizado</h2>
+                        </Fade>
                     </div>
                 
                     <div className="descricaoProjetosContent">
-                        <ModeloProjetosReact/>
-                        <ModeloProjetosCursos/>
-                        <ModeloProjetosRepositorios/>
+                        <Fade left>
+                            <ModeloProjetosReact/>
+                        </Fade>
+                        <Fade right>
+                            <ModeloProjetosCursos/>
+                        </Fade>
+                        <Fade left>
+                            <ModeloProjetosRepositorios/>
+                        </Fade>
                     </div>
                 </div> 
             

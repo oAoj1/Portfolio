@@ -14,7 +14,7 @@ export default function Repositorios(){
                 <hr className='linha'/>
 
                     <div className="repositoriesTitle">
-                        <h2>Outros repositórios</h2><RiGitRepositoryFill/>
+                        <h2>Repositórios GitHub</h2><RiGitRepositoryFill/>
                     </div>
 
                     <div className="contentFour">
