@@ -1,0 +1,20 @@
+.megaContentProjects{
+    width: 100%;
+    background:linear-gradient(-45deg,#fff,#00ffff);
+}
+
+.tituloProjetosContent{
+    padding: 3em 4em;
+}
+
+.tituloProjetosContent h1{
+    font-size: 4em;
+}
+.tituloProjetosContent h2{
+    margin-top: 0.3em;
+    color: #052c2c;
+}
+
+.descricaoProjetosContent{
+    padding: 1em 4em 3em 4em;
+}

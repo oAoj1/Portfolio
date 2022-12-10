@@ -1,12 +1,24 @@
+import '../Styles/3_Projetos.css'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import '../Styles/3_Projetos.css'
+import ModeloProjetosReact from '../Components/Projetos/Modelo/ModeloReact'
+import ModeloProjetosCursos from '../Components/Projetos/Modelo/ModeloCursos'
 
 export default function Projetos(){
     return(
-        <div>
+        <div className='megaContentProjects'>
             <Header/>
-            <p>projetos</p>
+
+                <div className="tituloProjetosContent">
+                    <h1>Projetos</h1>
+                    <h2>Veja com mais detalhes como cada projeto pessoal foi feito e o que foi utilizado</h2>
+                </div>
+            
+                <div className="descricaoProjetosContent">
+                    <ModeloProjetosReact/>
+                    <ModeloProjetosCursos/>
+                </div>
+            
             <Footer/>
         </div>
     )
