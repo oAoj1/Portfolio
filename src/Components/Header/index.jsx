@@ -18,7 +18,7 @@ export default function Header(){
                 </Fade>
             </div>
 
-            <span className='spanContent'>
+            <nav className='spanContent'>
                 <Fade bottom>
                     <ul className="menuContent">
                         <Link to="/">
@@ -51,7 +51,7 @@ export default function Header(){
                         </li>
                     </Fade>
                 </ul>
-            </span> 
+            </nav> 
             
         </header>
     )

@@ -22,3 +22,35 @@
     padding: 1em 0;
     font-size: 1.5em;
 }
+
+strong{
+    filter: drop-shadow(5px 5px 7px rgba(0,0,0,0.9));
+}
+
+.python{
+    color: #0000ff;
+}
+
+.html{
+    color: darkorange;
+}
+
+.css{
+    color: cornflowerblue;
+}
+
+.js{
+    color: #ffd700;
+}
+
+.react{
+    color: #00ffff;
+}
+
+.ts{
+    color: darkblue;
+}
+
+.node{
+    color: greenyellow;
+}
