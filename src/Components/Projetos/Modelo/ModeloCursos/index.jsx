@@ -1,3 +1,4 @@
+import '../Modelo.css'
 import ModeloProjeto from ".."
 import { BsClockFill } from 'react-icons/bs'
 
@@ -26,7 +27,7 @@ export default function ModeloProjetosCursos(){
             />
             <ModeloProjeto
                 imagem=''
-                react_icons={<BsClockFill/>}
+                react_icons=''
                 titulo="Cronometre seus estudos"
                 subtitulo="Projeto criado do curso de React TypeScript da Alura, cronometre o tempo do tema em que pretende estudar"
                 pacotes={estudosArray}

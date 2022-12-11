@@ -26,3 +26,15 @@
 strong{
     filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.9));
 }
+
+@media screen and (max-width:1000px){
+    .sobreMimContent h1{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .textoContent{
+        margin: 1em 0;
+        text-align: center;
+    }
+}

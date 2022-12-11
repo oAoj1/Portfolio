@@ -15,7 +15,7 @@ export default function ModeloProjeto(props){
                     <span>{props.subtitulo}</span>
                 </div>
 
-                <h3>Node Packages usados no projeto: </h3>
+                <h3>Node Packages usados no projetos: </h3>
                 
                 <ul className='listaNPM'>
                     {props.pacotes.map(itens => 
