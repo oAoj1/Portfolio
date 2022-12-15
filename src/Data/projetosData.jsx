@@ -8,6 +8,10 @@ const repositoriesContent = <Repositorios/>
 
 export const projetosContent = [
     {
+        name:'todos',
+        project:[reactContent,coursesContent,repositoriesContent]
+    },
+    {
         name:'react',
         project:reactContent
     },

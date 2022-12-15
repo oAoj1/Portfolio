@@ -2,7 +2,7 @@ import './Section.css'
 import '../Projetos/Projetos.css'
 
 import { useState } from 'react'
-import { projetosContent } from '../../Data'
+import { projetosContent } from '../../Data/projetosData'
 import { FaReact } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa'
 import { FaHandRock } from 'react-icons/fa'
@@ -18,9 +18,17 @@ import { SiTypescript } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { BiHappyBeaming } from 'react-icons/bi'
 import Fade from 'react-reveal/Fade';
+import ListaProjetos from '../../Lista'
 
 
 export default function Section(){ 
+
+    const tiposProjetos = [
+        'Todos',
+        'React',
+        'Cursos',
+        'Repositórios'
+    ]
 
     const [filtro,setFiltro] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
@@ -108,19 +116,18 @@ export default function Section(){
                         <h2>Meus projetos</h2>
                         <p>Ao longo dos meus estudos fui colocando em prática o que aprendi, veja algum dos projetos em que criei</p>
                         <div className="filterContent">
-                            <h3>Filtre por: </h3>
-                            <ul>
-                                <li>React</li>
-                                <li>Cursos</li>
-                                <li>Repositórios</li>
-                            </ul>
+                            <h3>Busque por: </h3>
 
-                            <input type="search" onChange={filtro => setFiltro(filtro.target.value)}/>
+                            <ListaProjetos
+                                itensProjetos={tiposProjetos}
+                                valor={filtro}
+                                setFiltroProjeto={proj => setFiltro(proj)}
+                            />
                         </div>
                     </Fade>
 
                     <ul className='projetosFiltrados'>
-                        {filtragem.map((proj) =>(
+                        {filtragem.map((proj) => (
                             <li key={proj.name}>
                                 {proj.project}
                             </li>
