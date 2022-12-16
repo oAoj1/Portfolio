@@ -1,10 +1,10 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
+import Fade from 'react-reveal/Fade';
 import { FaReact } from 'react-icons/fa'
 import { useState } from 'react'
 import { projetosContent } from '../../Data/projetosData'
-import Fade from 'react-reveal/Fade';
 import ListaProjetos from '../../Lista'
 import { softSkillsArray } from '../../Data/softSkillsData';
 import { hardSkillsArray } from '../../Data/hardSkillsData';
