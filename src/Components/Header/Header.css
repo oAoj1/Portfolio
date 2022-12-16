@@ -90,12 +90,12 @@ header{
     }
 
     .menuContent{
-        flex-direction: column;
         text-align: center;
     }
 
     .menuContent li{
-        margin: 0.2em 0;
+        margin: 0.6em ;
+        text-decoration: underline;
     }
 
     .mediasContent{

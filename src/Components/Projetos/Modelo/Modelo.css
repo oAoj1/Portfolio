@@ -70,5 +70,10 @@
 }
 
 @media screen and (max-width:1000px){
-    
+    .titulosContent{
+        font-size: 1em;
+    }
+    .tituloProjetos{
+        font-size: 3em;
+    }
 }
