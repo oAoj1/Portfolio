@@ -102,4 +102,14 @@ header{
         margin: 2em 0 1em 0;
     }
 
+    .logoContent img:hover{
+        transform: translateY(0);
+    }
+
+    .menuContent li:hover,
+    .mediasContent li:hover{
+        transform: translateY(0);
+        filter: drop-shadow(0 0 0);
+    }   
+
 }

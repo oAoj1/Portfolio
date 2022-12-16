@@ -53,4 +53,16 @@ footer{
         margin-top: 1em;
     }
 
+    .mediasContentF svg:hover{
+        transform: translateY(0);
+    }
+
+    .mediasContentF a:hover{
+        filter: drop-shadow(0 0 0);
+    }
+
+    .logoContentF img:hover{
+        transform: translateY(0);
+    }
+
 }
