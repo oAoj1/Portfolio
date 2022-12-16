@@ -27,9 +27,6 @@ export default function Header(){
                         <Link to="/sobremim">
                             <li>sobre mim</li>
                         </Link>
-                        <Link to="/projetos">
-                            <li>projetos</li>
-                        </Link>
                     </ul>
                 </Fade>
 
