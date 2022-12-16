@@ -11,6 +11,7 @@ export default function ListaProjetos(props){
                         {itens}
                     </option>
                 ))}
+                <option value=""></option>
             </select>
         </div>
     )

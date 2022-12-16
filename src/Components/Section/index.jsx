@@ -25,6 +25,8 @@ export default function Section(){
     const filtragem = projetosContent.filter(
         (proj) => proj.name.includes(pesquisaFiltrada)
     ) 
+    
+    console.log(filtro)
 
     return(
         <section>
@@ -110,14 +112,16 @@ export default function Section(){
                             />
                         </div>
                     </Fade>
-
-                    <ul className='projetosFiltrados'>
-                        {filtragem.map((proj) => (
-                            <li key={proj.name}>
-                                {proj.project}
-                            </li>
-                        ))}
-                    </ul>
+                    
+                    {filtro.length > 1 ? 
+                        <ul className='projetosFiltrados'>
+                            {filtragem.map((proj) => (
+                                <li key={proj.name}>
+                                    {proj.project}
+                                </li>
+                            ))}
+                        </ul>:''}
+                    
 
                 </div>
                 
