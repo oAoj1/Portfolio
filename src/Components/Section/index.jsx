@@ -56,16 +56,6 @@ export default function Section(){
                             <h2> <i>Hard Skills</i> </h2>
                             <p>Veja tecnologias em que possuo um <span className='verde'>breve conhecimento</span>, outras que <span className='amarelo'>estou estudando</span> e algumas que também já tive contato <span className='vermelho'>poucas vezes</span> </p>
 
-                            <div className="techContent">
-                                <ul>
-                                    {hardSkillsArray.map(hard => (
-                                        <li key={hard.name}>
-                                            {hard.hard}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
                             <div className="levelContent">
                                 <h4>Sublinhados de: </h4>
                                 <ul>
@@ -74,6 +64,17 @@ export default function Section(){
                                     <li> <span className='vermelho'>Vermelho:</span>  Já tive um contato com a tecnologia, porém pouca expêriencia</li>
                                 </ul>
                             </div>
+
+                            <div className="techContent">
+                                <ul>
+                                    {hardSkillsArray.map(hard => (
+                                        <li key={hard.name}>
+                                            {[hard.name,hard.hard]}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
                         </div>
                     </Fade>
 
@@ -85,7 +86,7 @@ export default function Section(){
                             <ul>
                                 {softSkillsArray.map(softs =>(
                                     <li key={softs.name}>
-                                        {softs.soft}
+                                        {[softs.soft , softs.name]}
                                     </li>
                                 ))}
                             </ul>

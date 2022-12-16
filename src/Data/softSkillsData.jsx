@@ -18,16 +18,12 @@ export const softSkillsArray = [
         soft:criatividade
     },
     {
-        name:'empatia',
-        soft:empatia
-    },
-    {
         name:'carisma',
         soft:carisma
     },
     {
-        name:'observacao',
-        soft:observacao
+        name:'empatia',
+        soft:empatia
     },
     {
         name:'esforco',
@@ -36,5 +32,9 @@ export const softSkillsArray = [
     {
         name:'curiosidade',
         soft:curiosidade
+    },
+    {
+        name:'observacao',
+        soft:observacao
     }
 ]
