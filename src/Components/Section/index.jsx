@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import { FaReact } from 'react-icons/fa'
 import ListaProjetos from '../../Lista'
 import { projetosContent } from '../../Data/projetosData'
+import { todosProjetosData } from '../../Data/todosProjetosData'
 import { softSkillsArray } from '../../Data/softSkillsData';
 import { hardSkillsArray } from '../../Data/hardSkillsData';
 
@@ -21,12 +22,10 @@ export default function Section(){
     const [filtro,setFiltro] = useState('')
     const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
     const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
-
+    
     const filtragem = projetosContent.filter(
         (proj) => proj.name.includes(pesquisaFiltrada)
     ) 
-    
-    console.log(filtro)
 
     return(
         <section>
@@ -113,16 +112,15 @@ export default function Section(){
                         </div>
                     </Fade>
                     
-                    {filtro.length > 1 ? 
-                        <ul className='projetosFiltrados'>
-                            {filtragem.map((proj) => (
-                                <li key={proj.name}>
-                                    {proj.project}
-                                </li>
-                            ))}
-                        </ul>
-                    :''}
-                    
+                    {filtro == 'Todos' ? todosProjetosData.project : 
+                    <ul className='projetosFiltrados'>
+                        {filtragem.map((proj) => (
+                            <li key={proj.name}>
+                                {proj.project}
+                            </li>
+                        ))}
+                    </ul>}
+
                 </div>
                 
             </div>
