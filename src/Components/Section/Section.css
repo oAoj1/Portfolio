@@ -545,7 +545,8 @@
     .hardSkillsContent ul li:nth-child(3):hover,
     .hardSkillsContent ul li:nth-child(4):hover,
     .hardSkillsContent ul li:nth-child(5):hover,
-    .hardSkillsContent ul li:nth-child(6):hover{
+    .hardSkillsContent ul li:nth-child(6):hover,
+    .hardSkillsContent ul li:nth-child(7):hover{
         transform: translateY(0);
         color:#000 ;
     }
