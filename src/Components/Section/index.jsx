@@ -113,13 +113,14 @@ export default function Section(){
                     </Fade>
                     
                     {filtro == 'Todos' ? todosProjetosData.project : 
-                    <ul className='projetosFiltrados'>
-                        {filtragem.map((proj) => (
-                            <li key={proj.name}>
-                                {proj.project}
-                            </li>
-                        ))}
-                    </ul>}
+                        <ul className='projetosFiltrados'>
+                            {filtragem.map((proj) => (
+                                <li key={proj.name}>
+                                    {proj.project}
+                                </li>
+                            ))}
+                        </ul>
+                    }
 
                 </div>
                 
