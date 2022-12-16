@@ -1,24 +1,13 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
+import { FaReact } from 'react-icons/fa'
 import { useState } from 'react'
 import { projetosContent } from '../../Data/projetosData'
-import { FaReact } from 'react-icons/fa'
-import { FaPython } from 'react-icons/fa'
-import { FaHandRock } from 'react-icons/fa'
-import { AiFillHtml5 } from 'react-icons/ai'
-import { AiFillEye } from 'react-icons/ai'
-import { AiFillHeart } from 'react-icons/ai'
-import { DiJavascript1 } from 'react-icons/di'
-import { DiCss3 } from 'react-icons/di'
-import { GiThink } from 'react-icons/gi'
-import { GiBrain } from 'react-icons/gi'
-import { BsSearch } from 'react-icons/bs'
-import { SiTypescript } from 'react-icons/si'
-import { IoLogoNodejs } from 'react-icons/io'
-import { BiHappyBeaming } from 'react-icons/bi'
 import Fade from 'react-reveal/Fade';
 import ListaProjetos from '../../Lista'
+import { softSkillsArray } from '../../Data/softSkillsData';
+import { hardSkillsArray } from '../../Data/hardSkillsData';
 
 
 export default function Section(){ 
@@ -69,13 +58,11 @@ export default function Section(){
 
                             <div className="techContent">
                                 <ul>
-                                    <li>hmtl<AiFillHtml5/></li>
-                                    <li>css<DiCss3/></li>
-                                    <li>java script<DiJavascript1/></li>
-                                    <li>react.js<FaReact/></li>
-                                    <li>node.js<IoLogoNodejs/></li>
-                                    <li>python<FaPython/></li>
-                                    <li>type script<SiTypescript/></li>
+                                    {hardSkillsArray.map(hard => (
+                                        <li key={hard.name}>
+                                            {hard.hard}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
 
@@ -96,12 +83,11 @@ export default function Section(){
                         <div className="softSkillsContent">
                             <h2> <i>Soft Skills</i> </h2>
                             <ul>
-                                <li><GiBrain/>criatividade</li>
-                                <li><BiHappyBeaming/>carisma</li>
-                                <li><AiFillHeart/>empatia</li>
-                                <li><FaHandRock/>dedicação</li>
-                                <li><GiThink/>curiosidade</li>
-                                <li><AiFillEye/>observação</li>
+                                {softSkillsArray.map(softs =>(
+                                    <li key={softs.name}>
+                                        {softs.soft}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </Fade>

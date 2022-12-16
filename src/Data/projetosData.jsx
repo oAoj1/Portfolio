@@ -5,11 +5,12 @@ import Repositorios from '../Components/Projetos/Repositorios'
 const reactContent = <Reacts/>
 const coursesContent = <Cursos/>
 const repositoriesContent = <Repositorios/>
+const todosProjetos = [<Reacts/>,<Cursos/>,<Repositorios/>]
 
 export const projetosContent = [
     {
         name:'todos',
-        project:[reactContent,coursesContent,repositoriesContent]
+        project:todosProjetos
     },
     {
         name:'react',
