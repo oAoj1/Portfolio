@@ -24,15 +24,15 @@ export const hardSkillsArray = [
         hard:cssEmoji
     },
     {
-        name:'js',
+        name:'java script',
         hard:jsEmoji
     },
     {
-        name:'react',
+        name:'react.js',
         hard:reactEmoji
     },
     {
-        name:'node',
+        name:'node.js',
         hard:nodeEmoji
     },
     {
@@ -40,7 +40,7 @@ export const hardSkillsArray = [
         hard:pythonEmoji
     },
     {
-        name:'ts',
+        name:'type script',
         hard:tsEmoji
     },
     
