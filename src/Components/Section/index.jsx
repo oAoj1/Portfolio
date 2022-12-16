@@ -120,9 +120,9 @@ export default function Section(){
                                     {proj.project}
                                 </li>
                             ))}
-                        </ul>:''}
+                        </ul>
+                    :''}
                     
-
                 </div>
                 
             </div>
