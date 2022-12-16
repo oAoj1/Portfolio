@@ -1,4 +1,4 @@
-import ModeloProjeto from ".."
+import ModeloProjeto from "../Projetos/Modelo"
 
 export default function ModeloProjetosReact(){
     

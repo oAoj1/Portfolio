@@ -1,5 +1,5 @@
 import '../Modelo.css'
-import ModeloProjeto from ".."
+import ModeloProjeto from "../Projetos/Modelo"
 import { BsClockFill } from 'react-icons/bs'
 
 export default function ModeloProjetosCursos(){
