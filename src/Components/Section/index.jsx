@@ -1,14 +1,13 @@
 import './Section.css'
 import '../Projetos/Projetos.css'
 
+import { useState } from 'react'
 import Fade from 'react-reveal/Fade';
 import { FaReact } from 'react-icons/fa'
-import { useState } from 'react'
-import { projetosContent } from '../../Data/projetosData'
 import ListaProjetos from '../../Lista'
+import { projetosContent } from '../../Data/projetosData'
 import { softSkillsArray } from '../../Data/softSkillsData';
 import { hardSkillsArray } from '../../Data/hardSkillsData';
-
 
 export default function Section(){ 
 
