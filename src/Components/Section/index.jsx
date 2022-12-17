@@ -106,8 +106,8 @@ export default function Section(){
                             <h3>Busque por: </h3>
 
                             <ListaProjetos
-                                itensProjetos={tiposProjetos}
                                 valor={filtro}
+                                itensProjetos={tiposProjetos}
                                 setFiltroProjeto={proj => setFiltro(proj)}
                             />
                         </div>
