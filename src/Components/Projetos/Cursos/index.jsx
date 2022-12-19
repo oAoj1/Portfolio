@@ -24,12 +24,6 @@ export default function Cursos(){
                             <a target="_blank" href="https://organograma-oaoj1.vercel.app">Clique aqui</a>
                         </div>
 
-                        <div className="innerProjectsContent">
-                            <BsClockFill className='clockLogo'/>
-                            <h3>Estudos</h3>
-                            <span>Cronometre seu tempo de estudo</span>
-                            <a target="_blank" href="https://alura-studies-oaoj1.vercel.app">Clique aqui</a>
-                        </div>
                     </div>
                 </div>
             </Fade>
