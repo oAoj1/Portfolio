@@ -9,6 +9,7 @@ import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
 import { softSkillsArray } from '../../Data/softSkillsData';
 import { hardSkillsArray } from '../../Data/hardSkillsData';
+import { motion } from 'framer-motion'
 
 export default function Section(){ 
 
@@ -114,13 +115,16 @@ export default function Section(){
                     </Fade>
                     
                     {filtro == 'Todos' ? todosProjetosData.project : 
-                        <ul className='projetosFiltrados'>
+                        <motion.ul  
+                            animate={{x:1,y:1}}
+                            className='projetosFiltrados'
+                        >
                             {filtragem.map((proj) => (
                                 <li key={proj.name}>
                                     {proj.project}
                                 </li>
                             ))}
-                        </ul>
+                        </motion.ul>
                     }
 
                 </div>
