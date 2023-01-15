@@ -1,0 +1,24 @@
+.modeloContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.modeloContainer h3{
+    font-size: 1.75em;
+}
+
+.modeloContainer span{
+    padding: 1rem 0;
+    font-size: 1.2em;
+    width: 200px;
+}
+
+.modeloContainer img{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+}

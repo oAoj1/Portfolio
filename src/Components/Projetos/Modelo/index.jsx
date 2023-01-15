@@ -1,6 +1,8 @@
+import './Modelo.css'
+
 export default function Modelo(props){
     return(
-        <div>
+        <div className='modeloContainer'>
             <img src={props.urlImg} alt="imagem" />
             <h3>{props.titulo}</h3>
             <span>{props.subtitulo}</span>

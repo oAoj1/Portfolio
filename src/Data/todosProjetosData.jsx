@@ -1,4 +1,4 @@
-import Reacts from '../Components/Projetos/Reacts'
+import Reacts from '../Components/Projetos/Reacts/React'
 import Cursos from '../Components/Projetos/Cursos'
 import Repositorios from '../Components/Projetos/Repositorios'
 
