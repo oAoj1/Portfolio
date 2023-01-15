@@ -35,12 +35,12 @@ export default function Reacts(){
                     drag='x'
                     dragConstraints={{right:0, left: -width}}
                 >
-                        {projetosReactData.map(react => (
-                            <motion.div className='reactProjects' key={react.name}>
-                                <span>{react.project}</span> 
-                            </motion.div>
-                        ))}
-                </motion.div>                  
+                    {projetosReactData.map(react => (
+                        <motion.div className='reactProjects' key={react.name}>
+                            <span>{react.project}</span> 
+                        </motion.div>
+                    ))}
+                </motion.div>        
             </Fade>
         </motion.div>
     )

@@ -1,0 +1,29 @@
+/*carousel = reactsContainer*/
+/*inner = reactContent*/
+/*item = reactProjects*/
+
+.repositoriesGrab{
+    text-align: center;
+}
+
+.repositoriesContainer{
+    overflow: hidden; 
+}
+
+.repositoriesContent{
+    display: flex;
+}
+
+.repositoriesProjects{
+    cursor: grab;
+    min-height: 200px;
+    min-width: 400px;
+    padding: 15px;
+}
+
+.repositoriesProjects span{
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}

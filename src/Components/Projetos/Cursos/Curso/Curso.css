@@ -1,0 +1,29 @@
+/*carousel = reactsContainer*/
+/*inner = reactContent*/
+/*item = reactProjects*/
+
+.coursesGrab{
+    text-align: center;
+}
+
+.coursesContainer{
+    overflow: hidden; 
+}
+
+.coursesContent{
+    display: flex;
+}
+
+.coursesProjects{
+    cursor: grab;
+    min-height: 200px;
+    min-width: 400px;
+    padding: 15px;
+}
+
+.coursesProjects span{
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}
