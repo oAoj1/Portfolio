@@ -30,7 +30,7 @@ export default function Cursos(){
                 </div>
 
                 <motion.div 
-                    className="reactContent"
+                    className="coursesContent"
                     whileTap={{cursor:'grabbing'}}
                     drag='x'
                     dragConstraints={{right:0,left:-width}}

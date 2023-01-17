@@ -7,6 +7,12 @@
     padding: 1rem;
 }
 
+.modeloContainer img,
+.modeloContainer h3,
+.modeloContainer span{
+    pointer-events: none;
+}
+
 .modeloContainer h3{
     font-size: 1.75em;
 }
