@@ -36,12 +36,12 @@ export const hardSkillsArray = [
         hard:nodeEmoji
     },
     {
-        name:'python',
-        hard:pythonEmoji
-    },
-    {
         name:'type script',
         hard:tsEmoji
+    },
+    {
+        name:'python',
+        hard:pythonEmoji
     },
     
 ]

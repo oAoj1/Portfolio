@@ -16,15 +16,17 @@ export default function SobreMim(){
                     
                     <div className="textoContent">
                         <Fade right>
-                            <p>Meu nome é <strong className='joao'>João Gabriel</strong> e desde pequeno sempre fui fascinado pela tecnologia e jogos eletrônicos. </p>
+                            <p>Meu nome é <strong>João Gabriel</strong> e desde pequeno sempre fui fascinado pela tecnologia e jogos eletrônicos. </p>
 
-                            <p>Em <strong>2017</strong> tive meu primeiro contato com o mundo dos códigos, <strong className='python'>Python</strong>, mas não dei continuidade.</p>
+                            <p>Em <strong>2017</strong> tive meu primeiro contato com o mundo dos códigos, estudei <strong>Python</strong>, mas não dei continuidade.</p>
 
-                            <p>No meio de <strong>2020</strong> comecei a estudar <strong className='html'>HTML</strong> e <strong className='css'>CSS</strong> e a partir desse instante me apaixonei pela programação, mantive apenas por alguns meses criando pequenos sites então parei os estudos.</p>
+                            <p>No meio de <strong>2020</strong> em plena pandemia comecei a estudar <strong >HTML</strong> e <strong>CSS</strong>, e a partir desse instante me apaixonei pela programação ,porém ,mantive por alguns meses criando pequenos sites e parando os estudos.</p>
 
-                            <p>No ano de <strong>2022</strong> voltei definitivamente, me aprimorei em <strong className='html'>HTML</strong> e <strong className='css'>CSS</strong>, aprendi sobre <strong className='js'>JavaScript</strong> e <strong className='react'>React</strong>, me aprofundei um pouco mais em <strong className='python'>Python</strong> e tive um breve experiência com <strong className='ts'>TypeScript</strong> e <strong className='node'>Node.JS</strong>. </p>
+                            <p>No ano de <strong>2022</strong> voltei definitivamente, me aprimorei em HTML e CSS, aprendi sobre <strong>JavaScript</strong> e <strong>React</strong>, me aprofundei um pouco mais em <strong>Python</strong>. </p>
 
-                            <p>Busco minha primeira vaga como <strong>desenvolvedor Front-end web</strong> , cujo objetivo é ter conhecimento de como funciona uma StartUp ou uma empresa e explorar ainda mais minha criatividade e aprimorar minha lógica. Futuramente pretendo me tornar <strong>Full-stack.</strong> </p>
+                            <p>Em 2023 entrei de cabeça conhecendo ainda mais sobre <strong>TypeScript e Node.JS</strong> e desenvolvimento <strong>back-End e banco de dados</strong> </p>
+
+                            <p>Meu objetivo é aprimorar minhas <strong>habilidades</strong>  com as linguagens e futuramente criar meu próprio <strong>negócio</strong> no mundo da tecnologia. Trabalhar <strong>remotamente</strong> para alguma empresa seja nacional ou internacional também se inclui nos meus objetivos</p>
                         </Fade>
                          
                     </div>
