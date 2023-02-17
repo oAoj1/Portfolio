@@ -11,20 +11,12 @@ import Esgotos from '../Components/Projetos/Reacts/Esgotos'
 
 export const projetosReactData = [
     {
-        name:'YouNews',
-        project:<YouNews/>
-    },
-    {
         name:'Controlar financas',
         project:<ControlarFinancas/>
     },
     {
         name:'Login',
         project:<Login/>
-    },
-    {
-        name:'Learn React',
-        project:<LearnReact/>
     },
     {
         name:'Dieta',
