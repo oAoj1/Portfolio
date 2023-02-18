@@ -16,26 +16,32 @@ export default function SoftSkill(){
     },[])
 
     return(
-        <motion.div 
-            className="softSkillsContainer"
-            ref={softSkillsContent}
-        >
+        <div>
+            <h5 className="segureArrasteTexto">Segure e arraste</h5>
             <h2> <i>Soft Skills</i> </h2>
-            <motion.ul
-                className='softSkillsContent'
-                whileTap={{cursor:'grabbing'}}
-                drag='x'
-                dragConstraints={{right:0,left:-width}}
+
+            <motion.div 
+                className="softSkillsContainer"
+                ref={softSkillsContent}
             >
-                {softSkillsArray.map(softs =>(
-                    <motion.li 
-                        key={softs.name}
-                        className="softSkillsProjects"
-                    >
-                        <span>{[softs.soft , softs.name]}</span> 
-                    </motion.li>
-                ))}
-            </motion.ul>
-        </motion.div>
+            
+                <motion.ul
+                    className='softSkillsContent'
+                    whileTap={{cursor:'grabbing'}}
+                    drag='x'
+                    dragConstraints={{right:0,left:-width}}
+                >
+                    {softSkillsArray.map(softs =>(
+                        <motion.li 
+                            key={softs.name}
+                            className="softSkillsProjects"
+                        >
+                            <span>{[softs.name, softs.soft]}</span> 
+                        </motion.li>
+                    ))}
+                </motion.ul>
+            </motion.div>
+        </div>
+        
     )
 }

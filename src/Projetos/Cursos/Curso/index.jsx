@@ -14,7 +14,7 @@ export default function Cursos(){
         const larguraVisivel = coursesContainer.current?.scrollWidth
         const larguraTotal = coursesContainer.current?.offsetWidth
 
-        setWidth(larguraVisivel-larguraTotal)
+        setWidth(larguraVisivel - larguraTotal)
     }, [])
 
     return(

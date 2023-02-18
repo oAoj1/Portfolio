@@ -1,3 +1,39 @@
+.skillsContent .verde,
+.levelContent .verde{
+    color: #008000;
+}
+
+.skillsContent .amarelo,
+.levelContent .amarelo{
+    color: #d8d803;
+}
+
+.skillsContent .vermelho,
+.levelContent .vermelho{
+    color: #dc143c;
+}
+
+.levelContent{
+    width: 100%;
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.levelContent h4{
+    margin-bottom: 0.5em;
+    font-size: 1.7em;
+}
+
+.levelContent ul{
+    list-style: none;
+}
+
+.levelContent ul li{
+    font-size: 1.2em;
+    margin: 0.3em 0;
+}
+
 .hardSkillsContainer{
     overflow: hidden; 
 }
@@ -28,6 +64,8 @@
     margin: 0 1rem;
 }
 
-.hardSkillsProjects span svg:nth-of-type(1){
-    color: #dc143c;
+.segureArrasteTexto{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5em;
 }

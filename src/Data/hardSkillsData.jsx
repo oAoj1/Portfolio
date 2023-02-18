@@ -17,7 +17,7 @@ const nodeEmoji = <IoLogoNodejs/>
 export const hardSkillsArray = [
     {
         name:'html',
-        hard:hmtlEmoji
+        hard:hmtlEmoji,
     },
     {
         name:'css',

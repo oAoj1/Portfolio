@@ -50,33 +50,21 @@ export default function Section(){
                        
                 </div>
                 
-                <div className="skillContent">
-
-                    <Fade right>
-                        <div className="hardSkills">
-                            <h2> <i>Hard Skills</i> </h2>
-                            <p>Veja tecnologias em que possuo um <span className='verde'>breve conhecimento</span>, outras que <span className='amarelo'>estou estudando</span> e algumas que também já tive contato <span className='vermelho'>poucas vezes</span> </p>
-
-                            <div className="levelContent">
-                                <h4>Sublinhados de: </h4>
-                                <ul>
-                                    <li> <span className='verde'>Verde:</span> Possuo um breve conhecimento da tecnologia</li>
-                                    <li> <span className='amarelo'>Amarelo:</span> Estou estudando a tecnologia no momento</li>
-                                    <li> <span className='vermelho'>Vermelho:</span>  Já tive um contato com a tecnologia, porém pouca expêriencia</li>
-                                </ul>
-                            </div>
-                            
+                <div className="skillsContent">
+                    <div className="hardSkill">
+                        <Fade right>
                             <HardSkills/>
-
-                        </div>
-                    </Fade>
-
+                        </Fade>
+                    </div>
+                    
                     <hr className='linha'/>
 
-                    <Fade left>
-                        <SoftSkill/>
-                    </Fade>
-                   
+                    <div className="softSkill">
+                        <Fade left>
+                            <SoftSkill/>
+                        </Fade>
+                    </div>
+                    
                 </div>
 
             </div>
