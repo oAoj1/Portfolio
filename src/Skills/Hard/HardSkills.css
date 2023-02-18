@@ -1,0 +1,29 @@
+.hardSkillsContainer{
+    overflow: hidden; 
+}
+
+.hardSkillsContent{
+    display: flex;
+}
+
+.hardSkillsProjects{
+    cursor: grab;
+    list-style: none;
+    min-width: 400px;
+    padding: 15px;
+}
+
+.hardSkillsProjects span{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    text-transform: capitalize;
+    width: 100%;
+    list-style-type: none;
+    border-radius: 12px;
+}
+
+.hardSkillsProjects span svg{
+    margin: 0 1rem;
+}

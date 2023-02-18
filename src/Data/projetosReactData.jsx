@@ -1,15 +1,19 @@
-import YouNews from '../Components/Projetos/Reacts/YouNews'
 import ControlarFinancas from '../Components/Projetos/Reacts/ControlarFinancas'
 import Login from '../Components/Projetos/Reacts/Login'
-import LearnReact from '../Components/Projetos/Reacts/LearnReact'
 import Dieta from '../Components/Projetos/Reacts/Dieta'
 import BuscarCep from '../Components/Projetos/Reacts/BuscarCep'
 import Imc1 from '../Components/Projetos/Reacts/Imc1.0'
 import Imc2 from '../Components/Projetos/Reacts/Imc2.0'
 import Cortico from '../Components/Projetos/Reacts/Cortico'
 import Esgotos from '../Components/Projetos/Reacts/Esgotos'
+import ToDoList from '../Components/Projetos/Reacts/To-DoList'
+
 
 export const projetosReactData = [
+    {
+        name:'To-Do List',
+        project:<ToDoList/>
+    },
     {
         name:'Controlar financas',
         project:<ControlarFinancas/>

@@ -18,29 +18,35 @@ export default function Reacts(){
     },[])
 
     return(
-        <motion.div className='reactsContainer' ref={reactsContainer}>
+        <motion.div 
+            className='reactsContainer' 
+            ref={reactsContainer}
+        >
             <Fade left>
                 <hr className='linha'/>
 
-                <div className="reactTitle">
-                    <h2>React</h2><FaReact/>
-                </div> 
-                <div className="reactGrab">
-                    <span>Segure e arraste para ver os projetos</span>
-                </div>
+                    <div className="reactTitle">
+                        <h2>React</h2><FaReact/>
+                    </div> 
+                    <div className="reactGrab">
+                        <span>Segure e arraste para ver os projetos</span>
+                    </div>
 
-                <motion.div 
-                    className="reactContent"
-                    whileTap={{cursor:'grabbing'}}
-                    drag='x'
-                    dragConstraints={{right:0, left: -width}}
-                >
-                    {projetosReactData.map(react => (
-                        <motion.div className='reactProjects' key={react.name}>
-                            <span>{react.project}</span> 
-                        </motion.div>
-                    ))}
-                </motion.div>        
+                    <motion.div 
+                        className="reactContent"
+                        whileTap={{cursor:'grabbing'}}
+                        drag='x'
+                        dragConstraints={{right:0, left: -width}}
+                    >
+                        {projetosReactData.map(react => (
+                            <motion.div 
+                                className='reactProjects' 
+                                key={react.name}
+                            >
+                                <span>{react.project}</span> 
+                            </motion.div>
+                        ))}
+                    </motion.div>        
             </Fade>
         </motion.div>
     )

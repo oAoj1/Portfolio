@@ -1,0 +1,29 @@
+.softSkillsContainer{
+    overflow: hidden; 
+}
+
+.softSkillsContent{
+    display: flex;
+}
+
+.softSkillsProjects{
+    cursor: grab;
+    list-style: none;
+    min-width: 500px;
+    padding: 15px;
+}
+
+.softSkillsProjects span{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    text-transform: capitalize;
+    width: 100%;
+    list-style-type: none;
+    border-radius: 12px;
+}
+
+.softSkillsProjects span svg{
+    margin: 0 1rem;
+}

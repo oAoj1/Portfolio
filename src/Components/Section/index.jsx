@@ -7,9 +7,9 @@ import { FaReact } from 'react-icons/fa'
 import ListaProjetos from '../../Lista'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
-import { softSkillsArray } from '../../Data/softSkillsData';
-import { hardSkillsArray } from '../../Data/hardSkillsData';
-import { motion } from 'framer-motion'
+import HardSkills from '../../Skills/Hard';
+import {motion} from 'framer-motion'
+import SoftSkill from '../../Skills/Soft';
 
 export default function Section(){ 
 
@@ -53,7 +53,7 @@ export default function Section(){
                 <div className="skillContent">
 
                     <Fade right>
-                        <div className="hardSkillsContent">
+                        <div className="hardSkills">
                             <h2> <i>Hard Skills</i> </h2>
                             <p>Veja tecnologias em que possuo um <span className='verde'>breve conhecimento</span>, outras que <span className='amarelo'>estou estudando</span> e algumas que também já tive contato <span className='vermelho'>poucas vezes</span> </p>
 
@@ -65,16 +65,8 @@ export default function Section(){
                                     <li> <span className='vermelho'>Vermelho:</span>  Já tive um contato com a tecnologia, porém pouca expêriencia</li>
                                 </ul>
                             </div>
-
-                            <div className="techContent">
-                                <ul>
-                                    {hardSkillsArray.map(hard => (
-                                        <li key={hard.name}>
-                                            {[hard.name,hard.hard]}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                            
+                            <HardSkills/>
 
                         </div>
                     </Fade>
@@ -82,16 +74,7 @@ export default function Section(){
                     <hr className='linha'/>
 
                     <Fade left>
-                        <div className="softSkillsContent">
-                            <h2> <i>Soft Skills</i> </h2>
-                            <ul>
-                                {softSkillsArray.map(softs =>(
-                                    <li key={softs.name}>
-                                        {[softs.soft , softs.name]}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        <SoftSkill/>
                     </Fade>
                    
                 </div>
