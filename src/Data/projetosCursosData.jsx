@@ -1,5 +1,5 @@
-import Organograma from "../Components/Projetos/Cursos/Organograma"
-import AlFood from "../Components/Projetos/Cursos/AlFood"
+import Organograma from "../Projetos/Cursos/Organograma"
+import AlFood from "../Projetos/Cursos/AlFood"
 
 export const projetosCursosData = [
     {

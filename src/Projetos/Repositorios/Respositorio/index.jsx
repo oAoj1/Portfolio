@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { RiGitRepositoryFill } from 'react-icons/ri'
 import { motion } from 'framer-motion';
 import { useState,useEffect,useRef } from 'react';
-import { projetosRepositoriosData } from '../../../../Data/projetosRepositoriosData'
+import { projetosRepositoriosData } from '../../../Data/projetosRepositoriosData'
 
 export default function Repositorios(){
 
@@ -14,7 +14,7 @@ export default function Repositorios(){
         const larguraVisivel = repositoriesContainer.current?.scrollWidth
         const larguraTotal = repositoriesContainer.current?.offsetWidth
 
-        setWidth(larguraVisivel-larguraTotal)
+        setWidth(larguraVisivel - larguraTotal)
     },[])
 
     return(

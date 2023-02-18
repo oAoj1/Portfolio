@@ -1,5 +1,5 @@
-import TrabalhosEscola from '../Components/Projetos/Repositorios/Escola'
-import JavaScript from '../Components/Projetos/Repositorios/JavaScript'
+import TrabalhosEscola from '../Projetos/Repositorios/Escola'
+import JavaScript from '../Projetos/Repositorios/JavaScript'
 
 export const projetosRepositoriosData = [
     {

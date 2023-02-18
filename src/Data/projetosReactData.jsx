@@ -1,12 +1,12 @@
-import ControlarFinancas from '../Components/Projetos/Reacts/ControlarFinancas'
-import Login from '../Components/Projetos/Reacts/Login'
-import Dieta from '../Components/Projetos/Reacts/Dieta'
-import BuscarCep from '../Components/Projetos/Reacts/BuscarCep'
-import Imc1 from '../Components/Projetos/Reacts/Imc1.0'
-import Imc2 from '../Components/Projetos/Reacts/Imc2.0'
-import Cortico from '../Components/Projetos/Reacts/Cortico'
-import Esgotos from '../Components/Projetos/Reacts/Esgotos'
-import ToDoList from '../Components/Projetos/Reacts/To-DoList'
+import ControlarFinancas from '../Projetos/Reacts/ControlarFinancas'
+import Login from '../Projetos/Reacts/Login'
+import Dieta from '../Projetos/Reacts/Dieta'
+import BuscarCep from '../Projetos/Reacts/BuscarCep'
+import Imc1 from '../Projetos/Reacts/Imc1.0'
+import Imc2 from '../Projetos/Reacts/Imc2.0'
+import Cortico from '../Projetos/Reacts/Cortico'
+import Esgotos from '../Projetos/Reacts/Esgotos'
+import ToDoList from '../Projetos/Reacts/To-DoList'
 
 
 export const projetosReactData = [

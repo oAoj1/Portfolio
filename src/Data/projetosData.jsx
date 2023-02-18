@@ -1,6 +1,6 @@
-import Reacts from '../Components/Projetos/Reacts/React'
-import Cursos from '../Components/Projetos/Cursos/Curso'
-import Repositorios from '../Components/Projetos/Repositorios/Respositorio'
+import Reacts from '../Projetos/Reacts/React'
+import Cursos from '../Projetos/Cursos/Curso'
+import Repositorios from '../Projetos/Repositorios/Respositorio'
 
 const reactContent = <Reacts/>
 const coursesContent = <Cursos/>

@@ -3,7 +3,7 @@ import { GiBrain } from 'react-icons/gi'
 import Fade from 'react-reveal/Fade';
 import { motion } from 'framer-motion'
 import { useState,useEffect,useRef } from 'react';
-import { projetosCursosData } from '../../../../Data/projetosCursosData';
+import { projetosCursosData } from '../../../Data/projetosCursosData';
 
 export default function Cursos(){
 

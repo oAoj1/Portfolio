@@ -1,7 +1,7 @@
 import './React.css'
 import { FaReact } from 'react-icons/fa'
 import Fade from 'react-reveal/Fade';
-import { projetosReactData } from '../../../../Data/projetosReactData'
+import { projetosReactData } from '../../../Data/projetosReactData'
 import { motion } from 'framer-motion'
 import { useState,useEffect,useRef } from 'react';
 
