@@ -1,15 +1,15 @@
 import './Section.css'
-import '../Projetos/Projetos.css'
+import '../../Projetos/Projetos.css'
 
-import { useState } from 'react'
-import Fade from 'react-reveal/Fade';
-import { FaReact } from 'react-icons/fa'
+import HardSkills from '../../Skills/Hard';
+import SoftSkill from '../../Skills/Soft';
 import ListaProjetos from '../../Lista'
+import Fade from 'react-reveal/Fade';
+import { useState } from 'react'
+import { FaReact } from 'react-icons/fa'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
-import HardSkills from '../../Skills/Hard';
-import {motion} from 'framer-motion'
-import SoftSkill from '../../Skills/Soft';
+import { motion } from 'framer-motion'
 
 export default function Section(){ 
 
