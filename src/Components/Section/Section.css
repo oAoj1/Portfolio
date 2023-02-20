@@ -186,6 +186,34 @@
     margin: auto;
 }
 
+.botoesFiltragem{
+    margin: 1.5rem 0.5rem 0.5rem 0;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+.botoesFiltragem:hover{
+    transform: translateY(-5px);
+    background-color: #000;
+    color: #00ffff;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+}
+
+.botoesFiltragem span{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.botoesFiltragem span:hover{
+    animation: glowing 1.5s infinite ease-in-out;
+}
+
 .reactTitle,
 .coursesTitle,
 .repositoriesTitle{

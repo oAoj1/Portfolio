@@ -17,7 +17,6 @@ export default function SoftSkill(){
 
     return(
         <div>
-            <h5 className="segureArrasteTexto">Segure e arraste</h5>
             <h2> <i>Soft Skills</i> </h2>
 
             <motion.div 
@@ -33,10 +32,9 @@ export default function SoftSkill(){
                 >
                     {softSkillsArray.map(softs =>(
                         <motion.li 
-                            key={softs.name}
                             className="softSkillsProjects"
                         >
-                            <span>{[softs.name, softs.soft]}</span> 
+                            <span key={softs.name}>{[softs.name, softs.soft]}</span> 
                         </motion.li>
                     ))}
                 </motion.ul>

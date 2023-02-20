@@ -3,13 +3,11 @@ import '../../Projetos/Projetos.css'
 
 import HardSkills from '../../Skills/Hard';
 import SoftSkill from '../../Skills/Soft';
-import ListaProjetos from '../../Lista'
 import Fade from 'react-reveal/Fade';
 import { useState } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
-import { motion } from 'framer-motion'
 
 export default function Section(){ 
 
@@ -18,15 +16,14 @@ export default function Section(){
         'React',
         'Cursos',
         'Repositórios'
-    ]
+    ]   
+    
+    const filtrarProjetoClique = (projeto) => {
+        setFiltro(projeto)
+    }
 
     const [filtro,setFiltro] = useState('')
-    const removerAcentos = filtro.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-    const pesquisaFiltrada = removerAcentos.trim().replaceAll(' ','').toLowerCase()
-    
-    const filtragem = projetosContent.filter(
-        (proj) => proj.name.includes(pesquisaFiltrada)
-    ) 
+    const filtragem = projetosContent.filter((project) => project.name.includes(filtro))
 
     return(
         <section>
@@ -77,25 +74,30 @@ export default function Section(){
                         <div className="filterContent">
                             <h3>Busque por: </h3>
 
-                            <ListaProjetos
-                                valor={filtro}
-                                itensProjetos={tiposProjetos}
-                                setFiltroProjeto={proj => setFiltro(proj)}
-                            />
+                            {tiposProjetos.map((itens,index) => (
+                                <button 
+                                    className='botoesFiltragem'
+                                    key={index} 
+                                    onClick={() => filtrarProjetoClique(itens)}
+                                >
+                                    <span>
+                                        {itens}    
+                                    </span> 
+                                </button> 
+                                
+                            ))}
+
                         </div>
                     </Fade>
                     
                     {filtro == 'Todos' ? todosProjetosData.project : 
-                        <motion.ul  
-                            animate={{x:1,y:1}}
-                            className='projetosFiltrados'
-                        >
-                            {filtragem.map((proj) => (
-                                <li key={proj.name}>
-                                    {proj.project}
+                        <ul className='projetosFiltrados'>
+                            {filtragem.map((project) => (
+                                <li key={project.name}>
+                                    {project.project}
                                 </li>
                             ))}
-                        </motion.ul>
+                        </ul>
                     }
 
                 </div>

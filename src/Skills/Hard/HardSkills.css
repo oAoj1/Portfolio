@@ -68,4 +68,21 @@
     text-align: center;
     padding: 1rem 0;
     font-size: 1.5em;
+    color:#052c2c ;
+}
+
+@media screen and (max-width:768px){
+    .hardSkillsProjects{
+        min-width: 250px;
+        font-size: 0.75em;
+    }
+
+    .hardSkillsProjects span{
+        font-size: 2em;
+        justify-content: center;
+        border-right: 1px solid #052c2c;
+        border-left: 1px solid #052c2c;
+        border-radius: 0;
+        padding: 1rem 0;
+    }
 }

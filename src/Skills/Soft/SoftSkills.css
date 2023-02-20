@@ -28,8 +28,26 @@
     margin: 0 1rem;
 }
 
-.segureArrasteTexto{
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 1.5em;
+@media screen and (max-width:768px){
+    .softSkillsProjects{
+        min-width: 250px;
+    }
+
+    .softSkillsProjects span{
+        font-size: 2em;
+        justify-content: center;
+        border-right: 1px solid #052c2c;
+        border-left: 1px solid #052c2c;
+        border-radius: 0;
+        padding: 1rem 0;
+    }
+
+    .softSkillsProjects span{
+        font-size: 2em;
+        justify-content: center;
+        border-right: 1px solid #052c2c;
+        border-left: 1px solid #052c2c;
+        border-radius: 0;
+        padding: 1rem 0;
+    }
 }
