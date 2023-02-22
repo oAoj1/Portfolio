@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
+import SobreMim from '../../Pages/2_SobreMim';
 
 export default function Section(){ 
 
@@ -31,7 +32,7 @@ export default function Section(){
 
             <h3>Bem vindo ao meu portifólio</h3>
                 
-                <div className="superContent">
+                <section className="superContent" id='homeSection'>
                     <Fade left>
                         <div className="joaoContent">
                             <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
@@ -45,9 +46,9 @@ export default function Section(){
                         </Fade>
                     </div>
                        
-                </div>
+                </section>
                 
-                <div className="skillsContent">
+                <section className="skillsContent" id='skillsSection'>
                     <div className="hardSkill">
                         <Fade right>
                             <HardSkills/>
@@ -62,11 +63,11 @@ export default function Section(){
                         </Fade>
                     </div>
                     
-                </div>
+                </section>
 
             </div>
 
-            <div className="projectsContent">  
+            <section className="projectsContent" id='projetosSection'>  
                 <div className="myProjectsContent">
                     <Fade top>
                         <h2>Meus projetos</h2>
@@ -102,7 +103,11 @@ export default function Section(){
 
                 </div>
                 
-            </div>
+            </section>
+
+            <section id='sobremimSection'>
+                <SobreMim/>
+            </section>
 
         </section>
     )

@@ -6,7 +6,37 @@ import { AiFillGithub } from 'react-icons/ai'
 import Fade from 'react-reveal/Fade';
 
 export default function Header(){
+    
+    const itensMenuHeader = [
+        'home',
+        'skills',
+        'projetos',
+        'sobremim'
+    ]
 
+    const renderizarMenuNavegacao = (conteudos) => {
+
+        const scrollarParaId = `${conteudos}Section`
+
+        const scrollarMenuHeader = () => {
+            document.getElementById(scrollarParaId).scrollIntoView({behavior:'smooth'})
+        }
+
+        return(
+            <ul key={conteudos}>
+                <li>
+                    <button
+                        className='botoesMenuHeader' 
+                        onClick={scrollarMenuHeader}
+                    >
+                        {conteudos}
+                    </button>
+                </li>
+            </ul>
+        )
+
+    }
+    
     return(
         <header>
 
@@ -21,12 +51,9 @@ export default function Header(){
             <nav className='spanContent'>
                 <Fade bottom>
                     <ul className="menuContent">
-                        <Link to="/">
-                            <li>home</li>
-                        </Link>
-                        <Link to="/sobremim">
-                            <li>sobre mim</li>
-                        </Link>
+                        {itensMenuHeader.map(itens => (
+                            renderizarMenuNavegacao(itens)
+                        ))}
                     </ul>
                 </Fade>
 
