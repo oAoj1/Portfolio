@@ -27,12 +27,12 @@ export default function Section(){
     const filtragem = projetosContent.filter((project) => project.name.includes(filtro))
 
     return(
-        <section>
+        <section id='homeSection'>
             <div className="infoContent">
 
             <h3>Bem vindo ao meu portifólio</h3>
                 
-                <section className="superContent" id='homeSection'>
+                <section className="superContent">
                     <Fade left>
                         <div className="joaoContent">
                             <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
