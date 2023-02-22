@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
-import SobreMim from '../../Pages/2_SobreMim';
+import SobreMim from '../AboutMe/2_SobreMim';
 
 export default function Section(){ 
 
@@ -105,7 +105,7 @@ export default function Section(){
                 
             </section>
 
-            <section id='sobremimSection'>
+            <section className='sobremimContainer' id='sobremimSection'>
                 <SobreMim/>
             </section>
 

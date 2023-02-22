@@ -1,8 +1,5 @@
 import Fade from 'react-reveal/Fade';
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
-import '../Styles/2_SobreMim.css'
-import '../Components/Section/Section.css'
+import './2_SobreMim.css'
 
 
 export default function SobreMim(){
