@@ -32,7 +32,7 @@ export default function HardSkills(){
                                             
             </div>
 
-            <h5 className="segureArrasteTexto">Segure e arraste</h5>
+            <h5 className="segureArrasteTexto">Segure e arraste para ver as habilidades</h5>
 
             <motion.div 
                 className="hardSkillsContainer" 
