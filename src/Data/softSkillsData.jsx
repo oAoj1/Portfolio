@@ -17,7 +17,7 @@ const proatividade = <FaRunning/>
 export const softSkillsArray = [
     {
         name:'criatividade',
-        soft:criatividade
+        soft:criatividade,
     },
     {
         name:'proatividade',
@@ -42,5 +42,5 @@ export const softSkillsArray = [
     {
         name:'empatia',
         soft:empatia
-    },
+    }
 ]

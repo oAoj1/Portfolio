@@ -34,7 +34,9 @@ export default function SoftSkill(){
                         <motion.li 
                             className="softSkillsProjects"
                         >
-                            <span key={softs.name}>{[softs.name, softs.soft]}</span> 
+                            <span key={softs.name}>
+                                {[softs.name, softs.soft]}
+                            </span> 
                         </motion.li>
                     ))}
                 </motion.ul>
