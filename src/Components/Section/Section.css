@@ -137,6 +137,27 @@
     margin: 2em 0;
 }
 
+.levelContent{
+    width: 100%;
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.levelContent h4{
+    margin-bottom: 0.5em;
+    font-size: 1.7em;
+}
+
+.levelContent ul{
+    list-style: none;
+}
+
+.levelContent ul li{
+    font-size: 1.2em;
+    margin: 0.3em 0;
+}
+
 .projectsContent{
     margin-top: -10rem;
     width: 100%;

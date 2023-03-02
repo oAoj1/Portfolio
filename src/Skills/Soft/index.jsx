@@ -37,6 +37,9 @@ export default function SoftSkill(){
                             <span key={softs.name}>
                                 {[softs.name, softs.soft]}
                             </span> 
+                            <span key={softs.level}>
+                                {softs.level}
+                            </span>
                         </motion.li>
                     ))}
                 </motion.ul>

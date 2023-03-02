@@ -18,21 +18,8 @@ export default function HardSkills(){
     return(
         <div>
             <div className="hardSkills">
-                <h2> <i>Hard Skills</i> </h2>
-                <p>Veja tecnologias em que possuo um <span className='verde'>breve conhecimento</span>, outras que <span className='amarelo'>estou estudando</span> e algumas que também já tive contato <span className='vermelho'>poucas vezes</span> </p>
-
-                <div className="levelContent">
-                    <h4>Sublinhados de: </h4>
-                    <ul>
-                        <li> <span className='verde'>Verde:</span> Possuo um breve conhecimento da tecnologia</li>
-                        <li> <span className='amarelo'>Amarelo:</span> Estou estudando a tecnologia no momento</li>
-                        <li> <span className='vermelho'>Vermelho:</span>  Já tive um contato com a tecnologia, porém pouca expêriencia</li>
-                    </ul>
-                </div>
-                                            
+                <h2> <i>Hard Skills</i> </h2>                           
             </div>
-
-            <h5 className="segureArrasteTexto">Segure e arraste para ver as habilidades</h5>
 
             <motion.div 
                 className="hardSkillsContainer" 
@@ -48,7 +35,12 @@ export default function HardSkills(){
                         <motion.li 
                             className="hardSkillsProjects" 
                         >
-                            <span key={hard.name}>{[hard.name , hard.hard]}</span>
+                            <span key={hard.name}>
+                                {[hard.name , hard.hard]}
+                            </span>
+                            <span key={hard.name}>
+                                {hard.level}
+                            </span>
                         </motion.li>
                     ))}
                 </motion.ul>

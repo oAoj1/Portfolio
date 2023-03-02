@@ -18,6 +18,14 @@ export default function Section(){
         'Cursos',
         'Repositórios'
     ]   
+
+    const rankArray = [ 
+        'S - Ótimo',
+        'A - Muito bom',
+        'B - Bom',
+        'C - Razoável',
+        'D - Pouca experiência'
+    ]
     
     const filtrarProjetoClique = (projeto) => {
         setFiltro(projeto)
@@ -49,6 +57,20 @@ export default function Section(){
                 </section>
                 
                 <section className="skillsContent" id='skillsSection'>
+
+                    <div className="levelContent">
+                        <h4>Rank: </h4>
+                        <ul>
+                            {rankArray.map(letras => (
+                                <li key={letras}>
+                                    {letras}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <h5 className="segureArrasteTexto">Segure e arraste para ver as habilidades</h5>
+
                     <div className="hardSkill">
                         <Fade right>
                             <HardSkills/>
