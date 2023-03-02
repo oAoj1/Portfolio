@@ -34,7 +34,7 @@ export const hardSkillsArray = [
     {
         name:'java script',
         hard:jsEmoji,
-        level:'b'
+        level:'a'
     },
     {
         name:'react.js',
