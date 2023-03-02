@@ -2,14 +2,16 @@ import ControlarFinancas from '../Projetos/Reacts/ControlarFinancas'
 import Login from '../Projetos/Reacts/Login'
 import Dieta from '../Projetos/Reacts/Dieta'
 import BuscarCep from '../Projetos/Reacts/BuscarCep'
-import Imc1 from '../Projetos/Reacts/Imc1.0'
 import Imc2 from '../Projetos/Reacts/Imc2.0'
 import Cortico from '../Projetos/Reacts/Cortico'
-import Esgotos from '../Projetos/Reacts/Esgotos'
 import ToDoList from '../Projetos/Reacts/To-DoList'
-
+import Cronograma from '../Projetos/Reacts/Cronograma'
 
 export const projetosReactData = [
+    {
+        name:'Cronograma',
+        project:<Cronograma/>
+    },
     {
         name:'To-Do List',
         project:<ToDoList/>
@@ -31,10 +33,6 @@ export const projetosReactData = [
         project:<BuscarCep/>
     },
     {
-        name:'Imc 1.0',
-        project:<Imc1/>
-    },
-    {
         name:'Imc 2.0',
         project:<Imc2/>
     },
@@ -42,8 +40,4 @@ export const projetosReactData = [
         name:'Cortiço',
         project:<Cortico/>
     },
-    {
-        name:'Esgotos',
-        project:<Esgotos/>
-    }
 ]

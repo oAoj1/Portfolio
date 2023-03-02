@@ -1,5 +1,6 @@
 import Organograma from "../Projetos/Cursos/Organograma"
 import AlFood from "../Projetos/Cursos/AlFood"
+import Node from "../Projetos/Cursos/Node.js"
 
 export const projetosCursosData = [
     {
@@ -9,5 +10,9 @@ export const projetosCursosData = [
     {
         name:'Alfood',
         project:<AlFood/>
+    },
+    {
+        name:'NodeJS',
+        project:<Node/>
     }
 ]

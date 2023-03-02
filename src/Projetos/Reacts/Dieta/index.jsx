@@ -7,6 +7,7 @@ export default function Dieta(){
             titulo='Dieta'
             subtitulo='Calcule seu gasto calórico'
             urlProjeto='https://dieta-nu.vercel.app'
+            urlGitHub='https://github.com/oAoj1/dieta'
         />
     )
 }

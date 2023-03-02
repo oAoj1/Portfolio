@@ -8,6 +8,7 @@ export default function Login(){
                 titulo='Login'
                 subtitulo='Página de login para UI'
                 urlProjeto='https://login-zeta-five.vercel.app'
+                urlGitHub='https://github.com/oAoj1/Login'
             />
         </div>
     )

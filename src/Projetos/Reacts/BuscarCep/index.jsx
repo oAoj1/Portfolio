@@ -8,6 +8,7 @@ export default function BuscarCep(){
                 titulo='Buscar Cep'
                 subtitulo='Busque seu endereço colocando seu cep'
                 urlProjeto='https://buscar-cep-kappa.vercel.app'
+                urlGitHub='https://github.com/oAoj1/buscar-cep'
             />
         </div>
     )

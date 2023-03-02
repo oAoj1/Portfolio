@@ -8,6 +8,7 @@ export default function ToDoList(){
                 titulo='To-Do List'
                 subtitulo='Lista de afazeres'
                 urlProjeto='https://to-do-list-oaoj1.vercel.app'
+                urlGitHub='https://github.com/oAoj1/to-do-list'
             />
         </div>
     )

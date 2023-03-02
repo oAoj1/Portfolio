@@ -8,6 +8,7 @@ export default function ControlarFinancas(){
                 titulo='Controlar Financas'
                 subtitulo='Saiba administrar suas financas com esse app'
                 urlProjeto='https://controlar-financas.vercel.app'
+                urlGitHub='https://github.com/oAoj1/ControlarFinancas'
             />
         </div>
     )
