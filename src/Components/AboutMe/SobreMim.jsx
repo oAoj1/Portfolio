@@ -2,21 +2,22 @@ import Fade from 'react-reveal/Fade';
 import './SobreMim.css'
 import { useState } from 'react'
 import { sobreMimData } from '../../Data/sobreMimData'
+import { todosSobreMim } from '../../Data/todosSobreMimData';
 
 export default function SobreMim(){
     const sobreMimFiltro = [
-        'Todos',
+        'Tudo',
         'Biografia',
-        'Cursos',
-        'Expêriencia'
+        'Cursos feitos',
+        'Experiência'
     ]
 
     function filtrarSobreMimClique(sobreMim){
         setFiltroSobreMim(sobreMim)
     }
 
-    const [filtroSobreMim,setFiltroSobreMim] = useState()
-    const filtragem = sobreMimData.filter((project) => project.name.includes(filtroSobreMim))
+    const [filtroSobreMim,setFiltroSobreMim] = useState('Tudo')
+    const filtragemSobreMim = sobreMimData.filter((about) => about.name.includes(filtroSobreMim))
 
     return(
         <div className="sobreMimContent">
@@ -40,7 +41,15 @@ export default function SobreMim(){
                     
                 ))}
 
-
+                {filtroSobreMim == 'Tudo' ? todosSobreMim.aboutme : 
+                    <ul className='sobreMimFiltrado'>
+                        {filtragemSobreMim.map(about => (
+                            <li key={about.name}>
+                                {about.aboutme}
+                            </li>
+                        ))}
+                    </ul>
+                } 
 
             </div>
 

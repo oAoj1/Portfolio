@@ -69,7 +69,9 @@ export default function Section(){
                         </ul>
                     </div>
 
-                    <h5 className="segureArrasteTexto">Segure e arraste para ver as habilidades</h5>
+                    <h5 className="segureArrasteTexto">
+                        Segure e arraste para ver as habilidades
+                    </h5>
 
                     <div className="hardSkill">
                         <Fade right>
@@ -115,7 +117,7 @@ export default function Section(){
                     
                     {filtro == 'Todos' ? todosProjetosData.project : 
                         <ul className='projetosFiltrados'>
-                            {filtragem.map((project) => (
+                            {filtragem.map(project => (
                                 <li key={project.name}>
                                     {project.project}
                                 </li>

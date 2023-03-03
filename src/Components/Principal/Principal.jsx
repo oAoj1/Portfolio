@@ -6,9 +6,9 @@ import './Principal.css'
 export default function Principal(){
     return(
         <div>
-            <Header></Header>
-            <Section></Section>
-            <Footer></Footer>
+            <Header/>
+            <Section/>
+            <Footer/>
         </div>
     )
 }

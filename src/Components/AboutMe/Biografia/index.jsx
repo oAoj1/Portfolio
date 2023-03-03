@@ -1,3 +1,6 @@
+import '../SobreMim.css'
+import Fade from 'react-reveal/Fade';
+
 export default function Biografia(){
     return(
         <div className="textoContent">
