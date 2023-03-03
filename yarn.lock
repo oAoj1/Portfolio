@@ -355,11 +355,6 @@
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
-"@remix-run/router@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.0.3.tgz"
-  integrity sha512-ceuyTSs7PZ/tQqi19YZNBc5X7kj1f8p+4DIyrcIYFY9h+hd1OKm4RqtiWldR9eGEvIiJfsqwM4BsuCtRIuEw6Q==
-
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
@@ -768,21 +763,6 @@ react-reveal@^1.2.2:
   integrity sha512-JCv3fAoU6Z+Lcd8U48bwzm4pMZ79qsedSXYwpwt6lJNtj/v5nKJYZZbw3yhaQPPgYePo3Y0NOCoYOq/jcsisuw==
   dependencies:
     prop-types "^15.5.10"
-
-react-router-dom@^6.4.3:
-  version "6.4.3"
-  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.4.3.tgz"
-  integrity sha512-MiaYQU8CwVCaOfJdYvt84KQNjT78VF0TJrA17SIQgNHRvLnXDJO6qsFqq8F/zzB1BWZjCFIrQpu4QxcshitziQ==
-  dependencies:
-    "@remix-run/router" "1.0.3"
-    react-router "6.4.3"
-
-react-router@6.4.3:
-  version "6.4.3"
-  resolved "https://registry.npmjs.org/react-router/-/react-router-6.4.3.tgz"
-  integrity sha512-BT6DoGn6aV1FVP5yfODMOiieakp3z46P1Fk0RNzJMACzE7C339sFuHebfvWtnB4pzBvXXkHP2vscJzWRuUjTtA==
-  dependencies:
-    "@remix-run/router" "1.0.3"
 
 react-scroll@^1.8.9:
   version "1.8.9"

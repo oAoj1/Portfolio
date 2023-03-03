@@ -1,5 +1,4 @@
 import './Footer.css'
-import { Link } from 'react-router-dom'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 import Fade from 'react-reveal/Fade';
@@ -25,9 +24,7 @@ export default function Footer(){
             
             <Fade right>
                 <div className="logoContentF">
-                    <Link to="/">
-                        <img src="/imagens/jg.png" alt="logo" />
-                    </Link>
+                    <img src="/imagens/jg.png" alt="logo" />
                 </div>
             </Fade>
 

@@ -1,6 +1,6 @@
-import Footer from '../Components/Footer'
-import Header from '../Components/Header'
-import Section from '../Components/Section'
+import Footer from '../Footer'
+import Header from '../Header'
+import Section from '../Section'
 import '../Styles/1_Principal.css'
 
 export default  function Principal(){

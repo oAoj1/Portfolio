@@ -8,60 +8,50 @@ import { FaRunning } from 'react-icons/fa'
 import { GiRead } from 'react-icons/gi'
 import { GiBookshelf } from 'react-icons/gi'
 
-const criatividade = <GiBrain/>
-const empatia = <AiFillHeart/>
-const carisma = <BiHappyBeaming/>
-const observacao = <AiFillEye/>
-const esforco = <FaHandRock/>
-const curiosidade = <GiThink/>
-const proatividade = <FaRunning/>
-const autodidatica = <GiRead/>
-const organizacao = <GiBookshelf/>
-
 export const softSkillsArray = [
     {
         name:'criatividade',
-        soft:criatividade,
+        soft:<GiBrain/>,
         level:'s'
     },
     {
         name:'proatividade',
-        soft:proatividade,
+        soft:<FaRunning/>,
         level:'b'
     },
     {
         name:'auto didática',
-        soft:autodidatica,
+        soft:<GiRead/>,
         level:'b'
     },
     {
         name:'organização',
-        soft:organizacao,
+        soft:<GiBookshelf/>,
         level:'b'
     },
     {
         name:'curiosidade',
-        soft:curiosidade,
+        soft:<GiThink/>,
         level:'b'
     },
     {
         name:'esforço',
-        soft:esforco,
+        soft:<FaHandRock/>,
         level:'b'
     },
     {
         name:'observação',
-        soft:observacao,
+        soft:<AiFillEye/>,
         level:'s'
     },
     {
         name:'carisma',
-        soft:carisma,
+        soft:<BiHappyBeaming/>,
         level:'s'
     },
     {
         name:'empatia',
-        soft:empatia,
+        soft:<AiFillHeart/>,
         level:'a'
     }
 ]

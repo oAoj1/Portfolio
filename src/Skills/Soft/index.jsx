@@ -32,12 +32,12 @@ export default function SoftSkill(){
                 >
                     {softSkillsArray.map(softs =>(
                         <motion.li 
+                            key={softs.name}
                             className="softSkillsProjects"
                         >
-                            <span key={softs.name}>
+                            <span>
                                 {[softs.name, softs.soft]}
-                            </span> 
-                            <span key={softs.level}>
+                                <br />
                                 {softs.level}
                             </span>
                         </motion.li>

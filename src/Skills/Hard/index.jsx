@@ -33,12 +33,12 @@ export default function HardSkills(){
                 >
                     {hardSkillsArray.map(hard => (
                         <motion.li 
+                            key={hard.name}
                             className="hardSkillsProjects" 
                         >
-                            <span key={hard.name}>
+                            <span>
                                 {[hard.name , hard.hard]}
-                            </span>
-                            <span key={hard.name}>
+                                <br />
                                 {hard.level}
                             </span>
                         </motion.li>

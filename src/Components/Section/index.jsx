@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { projetosContent } from '../../Data/projetosData'
 import { todosProjetosData } from '../../Data/todosProjetosData'
-import SobreMim from '../AboutMe/2_SobreMim';
+import SobreMim from '../AboutMe/SobreMim';
 
 export default function Section(){ 
 

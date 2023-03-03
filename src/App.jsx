@@ -1,10 +1,10 @@
 import './index.css'
-import AppRoutes from './Pages/0_Routes'
+import Principal from '../src/Components/Principal/Principal'
 
 export default function App() {
   return (
     <div className="App">
-      <AppRoutes/>
+      <Principal/>
     </div>
   )
 }
