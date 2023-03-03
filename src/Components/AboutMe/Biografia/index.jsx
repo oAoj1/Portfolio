@@ -5,6 +5,8 @@ export default function Biografia(){
     return(
         <div className="textoContent">
             <Fade right>
+                <h2>Biografia</h2>
+                
                 <p>Meu nome é <strong>João Gabriel</strong> e desde pequeno sempre fui fascinado pela tecnologia e jogos eletrônicos. </p>
 
                 <p>Em <strong>2017</strong> tive meu primeiro contato com o mundo dos códigos, estudei <strong>Python</strong>, mas não dei continuidade.</p>
