@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 export default function Biografia(){
     return(
         <div className="textoContent">
+            <hr />
             <Fade right>
                 <h2>Biografia</h2>
                 

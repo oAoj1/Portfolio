@@ -40,7 +40,7 @@ export default function SobreMim(){
                     </button> 
                     
                 ))}
-        <hr />
+
                 {filtroSobreMim == 'Tudo' ? todosSobreMim.aboutme : 
                     <ul className='sobreMimFiltrado'>
                         {filtragemSobreMim.map(about => (

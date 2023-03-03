@@ -38,6 +38,33 @@
     font-style: italic;
 }
 
+.listaCursosFeitos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}   
+
+.certificadosContainer{
+    list-style-type: none;
+    margin: 1rem 2rem;
+}
+
+.certificadosContainer h3{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2em;
+}
+
+.certificadosContainer li{
+    text-align: center;
+    padding: 0.5rem 0 0.25rem 0;
+}
+
+.certificadosContainer li a{
+    text-decoration: none;
+    color: #000fff;
+}
+
 strong{
     filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.9));
 }
