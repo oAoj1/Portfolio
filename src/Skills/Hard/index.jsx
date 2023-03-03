@@ -36,11 +36,8 @@ export default function HardSkills(){
                             key={hard.name}
                             className="hardSkillsProjects" 
                         >
-                            <span>
-                                {[hard.name , hard.hard]}
-                                <br />
-                                {hard.level}
-                            </span>
+                            <span>{[hard.name,hard.hard]}</span>
+                            <span>{hard.level}</span>
                         </motion.li>
                     ))}
                 </motion.ul>

@@ -35,11 +35,8 @@ export default function SoftSkill(){
                             key={softs.name}
                             className="softSkillsProjects"
                         >
-                            <span>
-                                {[softs.name, softs.soft]}
-                                <br />
-                                {softs.level}
-                            </span>
+                            <span>{[softs.name,softs.soft]}</span>
+                            <span>{softs.level}</span>
                         </motion.li>
                     ))}
                 </motion.ul>
