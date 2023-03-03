@@ -1,13 +1,44 @@
 import Fade from 'react-reveal/Fade';
 import './2_SobreMim.css'
-
+import {useState} from 'react'
 
 export default function SobreMim(){
+    const sobreMimFiltro = [
+        'Biografia',
+        'Cursos',
+        'Expêriencia'
+    ]
+
+    function filtrarSobreMimClique(sobreMim){
+        setFiltroSobreMim(sobreMim)
+    }
+
+    const [filtroSobreMim,setFiltroSobreMim] = useState()
+    const filtragem = projetosContent.filter((project) => project.name.includes(filtro))
+
     return(
         <div className="sobreMimContent">
             <Fade left>
                 <h1>Sobre mim</h1>
             </Fade>
+
+            <div className="sobreMimfilterContent">
+                <h3>Busque por: </h3>
+
+                {sobreMimFiltro.map((itens,index) => (
+                    <button 
+                        className='botoesFiltragem'
+                        key={index} 
+                        onClick={() => filtrarSobreMimClique(itens)}
+                    >
+                        <span>
+                            {itens}    
+                        </span> 
+                    </button> 
+                    
+                ))}
+
+            </div>
             
             <div className="textoContent">
                 <Fade right>

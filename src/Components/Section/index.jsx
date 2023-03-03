@@ -27,7 +27,7 @@ export default function Section(){
         'D - Pouca experiência'
     ]
     
-    const filtrarProjetoClique = (projeto) => {
+    function filtrarProjetoClique(projeto){
         setFiltro(projeto)
     }
 
@@ -43,7 +43,7 @@ export default function Section(){
                 <section className="superContent">
                     <Fade left>
                         <div className="joaoContent">
-                            <h1>Olá mundo, eu sou <span>João Gabriel</span> </h1>
+                            <h1>Olá mundo, eu sou <span>João Marques</span> </h1>
                             <p>Estudando as <span>tecnologias</span> para ser o melhor programador possível</p>
                         </div>
                     </Fade>
