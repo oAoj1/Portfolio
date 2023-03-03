@@ -57,7 +57,8 @@
 
 .certificadosContainer li{
     text-align: center;
-    padding: 0.5rem 0 0.25rem 0;
+    padding: 0.5rem;
+    transition: 0.3s;
 }
 
 .certificadosContainer li a{
@@ -78,5 +79,9 @@ strong{
     .textoContent{
         margin: 1em 0;
         text-align: center;
+    }
+
+    .listaCursosFeitos{
+        flex-direction: column;
     }
 }
